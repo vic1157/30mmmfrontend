@@ -1,0 +1,15 @@
+{
+  "singleQuote": false,
+  "semi": true,
+  "plugins": [
+    "prettier-plugin-tailwindcss",
+    "@ianvs/prettier-plugin-sort-imports"
+  ],
+  "importOrder": [
+    "^react$",
+    "<THIRD_PARTY_MODULES>",
+    "^(@/app|@/components)(/.*)$",
+    "^[.]"
+  ],
+  "importOrderParserPlugins": ["javascript", "jsx"]
+}
