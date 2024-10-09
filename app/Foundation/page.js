@@ -6,6 +6,7 @@ import BackButton from "@/components/Foundation/BackButton";
 import BCVT from "@/components/Foundation/BCVT";
 import CompleteLesson from "@/components/Foundation/CompleteLesson";
 import Description from "@/components/Foundation/Description";
+import Divider from "@/components/Foundation/Divider";
 import MainImage from "@/components/Foundation/MainImage";
 import MainLesson from "@/components/Foundation/MainLesson";
 import Quotes from "@/components/Foundation/Quotes";
@@ -35,7 +36,7 @@ export default function Foundation() {
             </div>
 
             {/* sub title and pill status */}
-            <div className="mt-[1vh] mb-[1vh]">
+            <div className="mt-[1vh] mb-[2vh]">
               <SubTitle />
             </div>
 
@@ -73,9 +74,10 @@ export default function Foundation() {
               <ReflectionBox />
             </div>
             {/* Divider */}
+            <Divider />
 
             {/* complete lesson container */}
-            <div className="flex w-full justify-center mt-[6vh] ">
+            <div className="flex w-full justify-center mt-[2vh] ">
               <CompleteLesson />
             </div>
           </div>
