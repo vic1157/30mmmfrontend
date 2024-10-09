@@ -13,7 +13,7 @@ export default function MainImage() {
         layout="responsive"
         width={670}
         height={327}
-        className="rounded-lg max-h-[50vh] brightness-50"
+        className="rounded-lg max-h-[55vh] brightness-50"
       />
       <div className="absolute inset-0 flex items-center justify-center">
         <Link href="/">
