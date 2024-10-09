@@ -1,13 +1,14 @@
 import React from "react";
 import Copywright from "./Copywright";
-import HelpAndSupport from "./HelpAndSupport";
+import HelpAndSupportLinks from "./HelpAndSupportLinks";
 import SocialButtons from "./SocialButtons";
 
 export default function Footer() {
   return (
-    <div className="flex flex-col border-top">
+    <div className="flex flex-col items-center justify-center w-5/6 border-top">
+      <hr className="w-5/6 border-[#E3E7ED] border-1 mb-[10vh]" />
       {/* help buttons components */}
-      <HelpAndSupport />
+      <HelpAndSupportLinks />
       {/* social buttons components */}
       <SocialButtons />
       {/* copywright */}

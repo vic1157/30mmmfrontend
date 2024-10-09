@@ -79,12 +79,12 @@ export default function Foundation() {
             <Divider />
 
             {/* complete lesson container */}
-            <div className="flex w-full justify-center mt-[2vh] ">
+            <div className="flex w-full justify-center mt-[2vh]">
               <CompleteLesson />
             </div>
 
             {/* Footer */}
-            <div>
+            <div className="flex items-center w-full mt-[10vh] justify-center">
               <Footer />
             </div>
           </div>
