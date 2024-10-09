@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
+import Link from "next/link";
 
 export default function SocialButtons() {
   return (
