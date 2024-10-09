@@ -74,6 +74,7 @@ export default function Foundation() {
             <div className="flex w-full justify-center mt-[6vh] ">
               <ReflectionBox />
             </div>
+
             {/* Divider */}
             <Divider />
 
