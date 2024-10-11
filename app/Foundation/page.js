@@ -19,7 +19,7 @@ import Title from "@/components/Foundation/Title";
 
 export default function Foundation() {
   return (
-    <div className="flex flex-col justify-between mx-[1vw] my-[1vh]">
+    <div className="flex flex-col justify-between mx-2 my-2 md:mx-4 md:my-4 lg:mx-[1vw] lg:my-[1vh]">
       {/* screen container */}
       <div className="flex flex-row items-start">
         {/* back button */}
@@ -28,9 +28,9 @@ export default function Foundation() {
         </div>
 
         {/* main content container */}
-        <div className="flex flex-col flex-grow max-w-full lg:max-w-10xl">
+        <div className="flex flex-col flex-grow max-w-full md:max-w-7xl lg:max-w-10xl md:flex-col">
           {/* text container */}
-          <div className="flex flex-col items-start bg-white ">
+          <div className="flex flex-col items-start bg-white md:flex-col">
             {/* title */}
             <div className="mt-[3vh]">
               <Title />
