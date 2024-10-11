@@ -4,7 +4,7 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 
 export default function BackButton() {
   return (
-    <div className="bg-[#7D899D1A] p-3 rounded-xl w-12 h-12 flex justify-center items-center max-sm:h-6 max-sm:w-6">
+    <div className="bg-[#7D899D1A] p-3 rounded-xl w-12 h-12 flex justify-center items-center max-xs:h-6 max-xs:w-6 max-sm:h-8 max-sm:w-8">
       <Link href="/">
         <AiOutlineArrowLeft
           size={20}
