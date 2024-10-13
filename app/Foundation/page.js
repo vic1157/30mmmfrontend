@@ -21,11 +21,11 @@ export default function Foundation() {
   return (
     <div className="flex flex-col justify-between px-2 py-2 md:px-4 md:py-4 lg:px-[1vw] lg:py-[1vh] w-full">
       {/* screen container */}
+      <div className="flex mr-[2vw] items-start">
+        <BackButton />
+      </div>
       <div className="flex flex-col items-center">
         {/* back button */}
-        <div className="flex mr-[2vw] items-start">
-          <BackButton />
-        </div>
 
         {/* main content container */}
         <div className="flex flex-col md:max-w-7xl lg:max-w-10xl">
