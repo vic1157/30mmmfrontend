@@ -2,7 +2,7 @@ import React from "react";
 
 export default function MainLesson() {
   return (
-    <div className="text-2xl leading-relaxed font-extrathin mx-[5vw]">
+    <div className="text-2xl leading-relaxed font-extrathin mx-[5vw] max-xs:text-lg">
       <p className="mb-6">
         My brother, the definition of sanctify is to be set apart as holy. Saul
         had to be called out into the open by Samuel to be set apart for God.
