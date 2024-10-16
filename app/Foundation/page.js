@@ -22,10 +22,8 @@ export default function Foundation() {
   return (
     <div className="flex flex-col justify-between px-2 py-2 md:px-4 md:py-4 lg:px-[1vw] lg:py-[1vh] w-full">
       {/* screen container */}
-      <div className="flex mr-[2vw] items-start">
+      <div className="flex  flex-row mr-[2vw] items-start  justify-between gap-x-5">
         <BackButton />
-      </div>
-      <div>
         <SidePanel />
       </div>
 

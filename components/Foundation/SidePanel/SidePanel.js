@@ -1,3 +1,5 @@
+"use client";
+
 import * as React from "react";
 import MailIcon from "@mui/icons-material/Mail";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
@@ -10,6 +12,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 export default function SidePanel() {
   const [open, setOpen] = React.useState(false);
@@ -19,8 +22,37 @@ export default function SidePanel() {
   };
 
   const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
-      <List>
+    <Box
+      sx={{ width: 500 }}
+      role="presentation"
+      onClick={toggleDrawer(false)}
+      className="bg-[#F8F9FDCC]"
+    >
+      <div className="mt-[2vh] ml-[2vw]">
+        <div className="text-2xl font-bold ">Progress</div>
+      </div>
+    </Box>
+  );
+
+  return (
+    <div>
+      <Button
+        onClick={toggleDrawer(true)}
+        className="bg-[#7D899D1A] text-[#717171] rounded-xl w-12 h-12 flex justify-center items-center max-xs:h-6 max-xs:w-6 max-sm:h-8 max-sm:w-8"
+      >
+        <GiHamburgerMenu />
+      </Button>
+      <Drawer open={open} onClose={toggleDrawer(false)} anchor="right">
+        {DrawerList}
+      </Drawer>
+    </div>
+  );
+}
+
+// Reference list items
+
+{
+  /* <List>
         {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
           <ListItem key={text} disablePadding>
             <ListItemButton>
@@ -44,16 +76,5 @@ export default function SidePanel() {
             </ListItemButton>
           </ListItem>
         ))}
-      </List>
-    </Box>
-  );
-
-  return (
-    <div>
-      <Button onClick={toggleDrawer(true)}>Open drawer</Button>
-      <Drawer open={open} onClose={toggleDrawer(false)}>
-        {DrawerList}
-      </Drawer>
-    </div>
-  );
+      </List> */
 }
