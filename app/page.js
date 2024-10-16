@@ -27,6 +27,8 @@ export default function SignIn() {
       <Link href="/Terms" className="text-center">
         Terms of Service
       </Link>
+      <div>Loading Page</div>
+      <div>Error Page</div>
     </main>
   );
 }

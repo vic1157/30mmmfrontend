@@ -14,6 +14,7 @@ import Quotes from "@/components/Foundation/Quotes";
 import ReadingTime from "@/components/Foundation/ReadingTime";
 import ReflectionBox from "@/components/Foundation/ReflectionBox";
 import SectionTitle from "@/components/Foundation/SectionTitle";
+import SidePanel from "@/components/Foundation/SidePanel/SidePanel";
 import SubTitle from "@/components/Foundation/SubTitle";
 import Title from "@/components/Foundation/Title";
 
@@ -24,6 +25,10 @@ export default function Foundation() {
       <div className="flex mr-[2vw] items-start">
         <BackButton />
       </div>
+      <div>
+        <SidePanel />
+      </div>
+
       <div className="flex flex-col items-center">
         {/* back button */}
 
