@@ -74,6 +74,7 @@ breakpoints:
 
 - smallest screen width to code for: _360px_
 - tailwind classes:
+  - xs: min-width: 360px
   - sm: min-width: 640px
   - md: min-width: 768px
   - lg: min-width: 1024px
