@@ -6,7 +6,7 @@ import PlayButton from "./PlayButton";
 
 export default function MainImage() {
   return (
-    <div className="relative w-4/5 mx-auto shadow-sm">
+    <div className="relative w-4/5 mx-auto shadow-sm max-xs:w-full max-xs:mx-0">
       <Image
         src={ImageSrc}
         alt="Jesus Washing Disciples Feet"

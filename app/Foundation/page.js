@@ -14,23 +14,26 @@ import Quotes from "@/components/Foundation/Quotes";
 import ReadingTime from "@/components/Foundation/ReadingTime";
 import ReflectionBox from "@/components/Foundation/ReflectionBox";
 import SectionTitle from "@/components/Foundation/SectionTitle";
+import SidePanel from "@/components/Foundation/SidePanel/SidePanel";
 import SubTitle from "@/components/Foundation/SubTitle";
 import Title from "@/components/Foundation/Title";
 
 export default function Foundation() {
   return (
-    <div className="flex flex-col justify-between mx-[1vw] my-[1vh]">
+    <div className="flex flex-col justify-between px-2 py-2 md:px-4 md:py-4 lg:px-[1vw] lg:py-[1vh] w-full">
       {/* screen container */}
-      <div className="flex flex-row items-start">
+      <div className="flex  flex-row mr-[2vw] items-start  justify-between gap-x-5">
+        <BackButton />
+        <SidePanel />
+      </div>
+
+      <div className="flex flex-col items-center">
         {/* back button */}
-        <div className="mr-[2vw]">
-          <BackButton />
-        </div>
 
         {/* main content container */}
-        <div className="flex flex-col flex-grow max-w-full lg:max-w-10xl">
+        <div className="flex flex-col md:max-w-7xl lg:max-w-10xl">
           {/* text container */}
-          <div className="flex flex-col items-start bg-white ">
+          <div className="flex flex-col items-start bg-white md:flex-col">
             {/* title */}
             <div className="mt-[3vh]">
               <Title />

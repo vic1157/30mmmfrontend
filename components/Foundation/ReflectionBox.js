@@ -8,7 +8,7 @@ export default function ReflectionBox() {
       <PiLightningFill size={60} color="#F5BD4F" />
       <div className="flex flex-col">
         <div className="text-2xl lg:text-3xl">Reflection:</div>
-        <div className="text-xl font-extralight">
+        <div className="text-xl font-extralight max-xs:text-md">
           What do you think you could achieve with sexual obedience that would
           be impossible to achieve without it?
         </div>

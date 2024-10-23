@@ -47,11 +47,11 @@ A nextjs frontend for the Clean program. This will connect to the .NET backend p
 
 ## Major Milestones
 
-- [ ] Project Skeleton
-- [ ] Developers Setup for Development
-- [ ] Login Page Components
+- [x] Project Skeleton
+- [x] Developers Setup for Development
+- [x] Login Page Components
 - [ ] Sign In Page Components
-- [ ] Foundation Page (Home Page) Components
+- [x] Foundation Page Components
 - [ ] Settings Page
 - [ ] Community Rules Pop Up
 
@@ -65,3 +65,17 @@ A nextjs frontend for the Clean program. This will connect to the .NET backend p
 
 - [Excalidraw Requirements Development](https://link.excalidraw.com/readonly/oQPGBmVuToHRTeUx01Fy)
 - [linktree](https://linktr.ee/30mmm)
+
+---
+
+## Useful References
+
+breakpoints:
+
+- smallest screen width to code for: _360px_
+- tailwind classes:
+  - sm: min-width: 640px
+  - md: min-width: 768px
+  - lg: min-width: 1024px
+  - xl: min-width: 1280px
+  - 2xl: min-width: 1536px
