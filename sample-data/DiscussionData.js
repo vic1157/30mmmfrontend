@@ -10,7 +10,7 @@ export const comments = [
   {
     id: 2,
     userName: "Donovan",
-    avatar: "/path-to-avatar.jpg", // Replace with actual avatar URL
+    avatar: "https://static.vecteezy.com/system/resources/thumbnails/033/168/339/small_2x/a-young-black-man-in-a-suit-and-tie-ai-generative-free-photo.jpg", // Replace with actual avatar URL
     text: "This is a test comment!",
     date: "2024-10-16",
   },

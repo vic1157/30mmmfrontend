@@ -14,7 +14,6 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import { GiHamburgerMenu } from "react-icons/gi";
-import DiscussionPillBox from "./DiscussionPillBox";
 import DiscussionPlane from "./DiscussionPlane";
 import JoinConversationButton from "./JoinConversationButton";
 import LessonItem from "./LessonItem";
