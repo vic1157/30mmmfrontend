@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { Sort } from "@mui/icons-material";
 import Image from "next/image";
 import { FaReply, FaThumbsUp } from "react-icons/fa";
+import SortByPill from "./SortByPillBox";
 
 export default function DiscussionPlane({ comments, notes }) {
   const [selectedTab, setSelectedTab] = useState("comments"); // Default tab
@@ -15,6 +17,7 @@ export default function DiscussionPlane({ comments, notes }) {
         src={item.avatar}
         alt={item.userName}
         width={10}
+        height={10}
         className="w-12 h-12 mr-4 rounded-full"
       />
 
@@ -44,36 +47,38 @@ export default function DiscussionPlane({ comments, notes }) {
   );
 
   return (
-    <div className="p-4">
-      {/* Tab Selection (Comments or Notes) */}
-      <div className="flex items-center justify-center mb-4">
-        <div className="flex text-sm font-semibold bg-gray-200 rounded-full shadow-lg">
-          {/* Comments Tab */}
-          <button
-            onClick={() => setSelectedTab("comments")}
-            className={`px-4 py-2 rounded-l-full ${
-              selectedTab === "comments"
-                ? "bg-black text-white"
-                : "bg-white text-gray-600"
-            }`}
-          >
-            Comments <span className="ml-1">({comments.length})</span>
-          </button>
+    <div className="items-center p-4 space-y-5">
+      <div className="flex flex-row items-center space-x-10">
+        {/* Tab Selection (Comments or Notes) */}
+        <div className="flex items-center justify-center">
+          <div className="flex text-sm font-semibold bg-gray-200 rounded-full shadow-lg">
+            {/* Comments Tab */}
+            <button
+              onClick={() => setSelectedTab("comments")}
+              className={`px-4 py-2 rounded-l-full ${
+                selectedTab === "comments"
+                  ? "bg-black text-white"
+                  : "bg-white text-gray-600"
+              }`}
+            >
+              Comments <span className="ml-1">({comments.length})</span>
+            </button>
 
-          {/* Notes Tab */}
-          <button
-            onClick={() => setSelectedTab("notes")}
-            className={`px-4 py-2 rounded-r-full ${
-              selectedTab === "notes"
-                ? "bg-black text-white"
-                : "bg-white text-gray-600"
-            }`}
-          >
-            Notes <span className="ml-1">({notes.length})</span>
-          </button>
+            {/* Notes Tab */}
+            <button
+              onClick={() => setSelectedTab("notes")}
+              className={`px-4 py-2 rounded-r-full ${
+                selectedTab === "notes"
+                  ? "bg-black text-white"
+                  : "bg-white text-gray-600"
+              }`}
+            >
+              Notes <span className="ml-1">({notes.length})</span>
+            </button>
+          </div>
         </div>
+        <SortByPill />
       </div>
-
       {/* Display content based on selected tab */}
       <div>
         {selectedTab === "comments" &&

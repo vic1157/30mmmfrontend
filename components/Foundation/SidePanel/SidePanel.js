@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { comments, notes } from "@/sample-data/DiscussionData";
 import MailIcon from "@mui/icons-material/Mail";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import Box from "@mui/material/Box";
@@ -15,6 +16,7 @@ import ListItemText from "@mui/material/ListItemText";
 import { GiHamburgerMenu } from "react-icons/gi";
 import DiscussionPillBox from "./DiscussionPillBox";
 import DiscussionPlane from "./DiscussionPlane";
+import JoinConversationButton from "./JoinConversationButton";
 import LessonItem from "./LessonItem";
 import ProgressBar from "./ProgressBar";
 import SortByPill from "./SortByPillBox";
@@ -76,12 +78,14 @@ export default function SidePanel() {
             lessonTitle={"Fight One Day at a Time"}
             isAccessible={false}
           />
-          <Divider />
-          <div className="text-2xl font-bold">Discussions</div>
-          <div className="flex flex-row items-center justify-between mx-5">
-            <DiscussionPillBox commentsCount={16} notesCount={8} />
-            <SortByPill />
-          </div>
+        </div>
+        <Divider className="mt-[2vh]" />
+        <div className="text-2xl font-bold mt-[2vh] mb-[1vh]">Discussions</div>
+        <div className="flex flex-row items-center justify-between mx-5">
+          <DiscussionPlane comments={comments} notes={notes} />
+        </div>
+        <div className="flex items-center justify-center">
+          <JoinConversationButton />
         </div>
       </div>
     </Box>

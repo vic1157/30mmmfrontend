@@ -14,11 +14,11 @@ export default function LessonItem({
           {lessonNumber}
         </div>
       ) : (
-        <div className="flex items-center justify-center text-xl text-white bg-red-500 rounded-full w-7 h-7">
+        <div className="flex items-center justify-center text-xl text-white bg-[#AF3634] rounded-full w-7 h-7">
           {lessonNumber}
         </div>
       )}
-      <div className="px-4 text-xl truncate">{lessonTitle}</div>
+      <div className="px-6 text-xl truncate">{lessonTitle}</div>
       {isAccessible ? (
         <Link href="/">
           <MdKeyboardArrowRight className="text-xl" />
