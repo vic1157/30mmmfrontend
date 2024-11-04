@@ -1,8 +1,8 @@
 import React from "react";
+import Logo from "@/components/common/Logo";
 import Divider from "./Divider";
 import Form from "./Form";
 import GoogleButton from "./googleButton";
-import Logo from "./Logo";
 // local components
 import WelcomeText from "./WelcomeText";
 
