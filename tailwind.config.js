@@ -14,6 +14,7 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "jesus-hero": "url('/jesus_hero.avif')",
       },
       colors: {
         "placeholder-gray": "#a7afb6",
@@ -32,6 +33,9 @@ module.exports = {
       },
       animation: {
         roll: "roll 1.5s ease-in-out infinite",
+      },
+      backgroundPosition: {
+        "top-4": "left top",
       },
     },
   },
