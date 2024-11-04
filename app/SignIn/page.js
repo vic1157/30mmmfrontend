@@ -11,16 +11,8 @@ export default function SignIn() {
   const [firstTabActive, setFirstTabActive] = useState(true);
 
   return (
-    <div className="h-screen max-w-screen-xl mx-auto min-w-screen md:flex md:max-h-[1497px]">
-      <div className="md:overflow-x-clip md:w-1/2 md:order-2 max-md:w-full -z-50">
-        <Image
-          src="/jesus_hero.avif"
-          width={2319}
-          height={1497}
-          alt="Jesus Hero"
-          className="max-md:object-contain md:min-h-full md:max-h-full md:object-none md:overflow-hidden -z-10 aspect-[773/499]"
-        />
-      </div>
+    <div className="w-screen h-screen mx-auto max-w-screen-2xl md:flex">
+      <div className="bg-fixed bg-white bg-center bg-no-repeat bg-contain md:bg-top-4 max-md:bg-top min-h-72 md:bg-cover md:bg-origin-border md:overflow-x-clip md:w-1/2 md:order-2 max-md:w-full -z-50 bg-jesus-hero md:bg-clip-border"></div>
       <div className="z-50 flex flex-col justify-start w-full gap-4 md:h-full md:items-center md:justify-center md:w-1/2">
         <Image
           className="z-10 block mx-auto -mt-16"
