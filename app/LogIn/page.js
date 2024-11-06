@@ -8,6 +8,7 @@ import PhotoPanel from "@/components/LogIn/PhotoPanel";
 export default function LogIn() {
   return (
     <div className="flex flex-col w-screen h-screen">
+      <BackLink />
       <div className="flex w-full h-full mx-auto sm:flex-row ">
         <FormPanel />
         <PhotoPanel />
