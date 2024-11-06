@@ -14,13 +14,6 @@ export default function FormPanel() {
       <GoogleButton />
       <Divider />
       <Form />
-      {/* |- login Fields */}
-      {/* |-- email field */}
-      {/* |-- password field */}
-      {/* |- forgot password  */}
-      {/* |- Login Button */}
-      {/* |- Create Account Text */}
-      {/* right panel - photo */}
     </div>
   );
 }

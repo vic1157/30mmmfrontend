@@ -9,7 +9,7 @@ export default function PhotoPanel() {
         alt="Jesus Washing Disciples Feet - Center"
         width={300}
         height={300}
-        className="self-stretch object-cover object-right w-full contain-layout overflow-clip"
+        className="w-full"
         priority={true}
       />
     </div>
