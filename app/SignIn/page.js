@@ -56,6 +56,9 @@ export default function SignIn() {
 
   return (
     <div className="w-screen h-screen mx-auto max-w-screen-2xl md:flex">
+      <div className="fixed z-20 py-1 rounded-md max-md:shadow-md bg-white/80 top-2 left-2 before:static ">
+        <BackLink />
+      </div>
       {/* 
       The main container has two elements: the Jesus image and the form
       container. Experimentally, I set the max width of the whole page to 1536px, 
