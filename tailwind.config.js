@@ -15,6 +15,9 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "jesus-hero": "url('/jesus_hero.avif')",
+        "donate-desktop": "url('/donate-horiz.png')",
+        "donate-mobile": "url('/donate-vert.png')",
+        "lesson-card": "url('/week-card.png')",
       },
       colors: {
         "placeholder-gray": "#a7afb6",
@@ -22,6 +25,7 @@ module.exports = {
         "gray-bg": "#F2F3F5",
         formfield: "#F9FAFB",
         "primary-red": "#AF3634",
+        "accent-red": "#64261C",
         "almost-black": "#1A1A1A",
       },
       keyframes: {
