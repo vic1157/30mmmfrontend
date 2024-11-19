@@ -9,14 +9,14 @@ export default function Home() {
   return (
     <div className="flex min-h-screen w-full xl:max-w-[1400px] flex-col mx-auto justify-start">
       {/* Navigation bar...to be extracted */}
-      <div className="flex items-center justify-between w-full h-12 px-2 py-2 border-b-2 min-h-fit border-b-gray-300 md:px-5 gap-x-2">
+      <div className="flex items-center justify-between w-full h-16 px-2 py-2 border-b-2 min-h-fit border-b-gray-300 md:px-5 gap-x-2">
         <div className=" size-9">
           <RxHamburgerMenu size="lg" />
         </div>
         <div className="mx-auto text-2xl">LOGO GOES HERE</div>
         <div className="ml-auto min-w-fit text-primary-red">
           <LuPhone />
-          <span className="text-xs font-semibold">Call Us</span>
+          <span className="text-sm font-medium text-primary-red">Call Us</span>
         </div>
         <div className="flex items-center h-12 gap-x-2 min-w-36 justify-self-end">
           <div className="rounded-full size-10 bg-primary-red" />
@@ -29,7 +29,7 @@ export default function Home() {
       {/* Start of the content container */}
       <div className="flex flex-col items-start space-y-8  pt-12 w-full mt-8 min-h-screen max-w-[1000px] mx-auto ">
         <div className="flex flex-wrap items-baseline justify-start w-full gap-2 ">
-          <h1 className="text-4xl font-semibold leading-8">
+          <h1 className="text-4xl font-bold leading-relaxed">
             Hello, Donovan Anderson{" "}
           </h1>
           <span className="text-3xl font-semibold text-center bg-white rounded-full drop-shadow-md size-9">
@@ -43,6 +43,7 @@ export default function Home() {
           </h2>
         </div>
         <div className="w-[90%] max-w-[1200px] h-80 md:h-60 mx-auto max-md:max-w-[340px] bg-donate-mobile bg-top bg-accent-red md:bg-donate-desktop bg-no-repeat md:bg-right justify-self-center rounded-3xl"></div>
+        {/* The sizes by lines are 22 14 12 and the buttons are 16 */}
         <div className="w-full mr-auto">
           <h4 className="text-xl font-bold">CLEAN GROUP XXIII</h4>
         </div>
@@ -53,12 +54,14 @@ export default function Home() {
             <span className="text-sm"> Upcoming</span>
             <span className="text-sm">Completed</span>
           </div>
-          <div className="p-2 ml-auto bg-gray-200 rounded-2xl">
+          <div className="p-2 ml-auto text-3xl bg-gray-200 rounded-2xl">
             🗓️ Group: <strong>Clean XXIII</strong> ⌄
           </div>
         </div>
         <div className="flex flex-row flex-wrap justify-center w-full gap-3 py-3">
           <div className="w-[320px] h-[290px] bg-neutral-50 shadow-lg rounded-3xl bg-lesson-card bg-no-repeat bg-top"></div>
+          {/* The font sizes are 
+          Week 10 and Status 8, 16 Foundation, bottom line is 12 and 12 bold */}
           <div className="w-[320px] h-[290px] bg-neutral-50 shadow-lg rounded-3xl bg-lesson-card bg-no-repeat bg-top"></div>
           <div className="w-[320px] h-[290px] bg-neutral-50 shadow-lg rounded-3xl bg-lesson-card bg-no-repeat bg-top"></div>
           <div className="w-[320px] h-[290px] bg-neutral-50 shadow-lg rounded-3xl bg-lesson-card bg-no-repeat bg-top"></div>

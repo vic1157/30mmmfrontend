@@ -19,8 +19,12 @@ module.exports = {
         "donate-mobile": "url('/donate-vert.png')",
         "lesson-card": "url('/week-card.png')",
       },
+      backgroundSize: {
+        "w-100-h-auto": "100% auto",
+      },
       colors: {
         "placeholder-gray": "#a7afb6",
+        "title-black": "#13171B",
         "description-gray": "#5D6B84",
         "gray-bg": "#F2F3F5",
         formfield: "#F9FAFB",
@@ -39,7 +43,10 @@ module.exports = {
         roll: "roll 1.5s ease-in-out infinite",
       },
       backgroundPosition: {
-        "top-4": "left top",
+        "top-4": "left 20% top 0",
+        "right-1": "left 20% top 0",
+        "right-2": "left 25% top 0",
+        "left-1": "left 2rem top 0",
       },
     },
   },
