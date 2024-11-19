@@ -4,15 +4,29 @@
 
 A nextjs frontend for the Clean program. This will connect to the .NET backend previously developed.
 
+## Tech Stack
+
+- Vercel for Deployment; watch [this](https://www.youtube.com/watch?v=jsuNjCAngnQ)
+  - poor design can create a big bill; need to avoid this.
+- Nextjs has a built in cache
+- using reactQuery caches things automatically too
+  - using fetch or axios to do requests, but ReactQuery helps with caching and optimization.
+- Gitlab CI for deploying to Vercel
+- MongoDB Atlas for DB
+- GraphQL API in AWS with API Gateway and Lambda function
+- Clerk for Authentication
+
+Other potential tech:
+
+- [Cloudinary](https://cloudinary.com/pricing) seems like a good CDN for video because it automatically provides the right type of streaming quality to the user.
+- [uploadthing](https://uploadthing.com/)
+- [bunny cdn](https://bunny.net/cdn/)
+
 ## Contributors
 
 - Donovan Anderson
 - Aaron Dantley
 - William Learned
-- Ahmed Shifa
-- Arsema Tegegne
-- Samuel Negash
-- Muhammad Abdullah
 
 ## Color Map
 

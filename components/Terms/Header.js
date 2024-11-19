@@ -6,7 +6,7 @@ export default function Header() {
       <h1 className="mb-4 text-3xl font-bold">
         Terms of Service for Clean LMS
       </h1>
-      <p className="mb-4 italic">Last updated: [Date]</p>
+      <p className="mb-4 italic">Last updated: [Work In Progress]</p>
     </div>
   );
 }
