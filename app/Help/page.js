@@ -84,7 +84,7 @@ export default function SupportPage() {
           Click the button below to start a live chat with one of our support
           agents.
         </p>
-        <button className="px-4 py-2 mt-2 rounded border-1 text-primary-red bg-white-500 border-primary-red">
+        <button className="px-4 py-2 mt-2 border-2 rounded text-primary-red bg-white-500 border-primary-red">
           Start Live Chat
         </button>
       </div>

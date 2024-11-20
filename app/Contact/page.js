@@ -31,10 +31,10 @@ export default function ContactPage() {
         <p>
           Phone:{" "}
           <a href="tel:+1234567890" className="text-primary-red">
-            +1 234 567 890
+            +1 646-519-1186
           </a>
         </p>
-        <p>Address: 123 Main Street, Cityville, Country</p>
+        <p>Address: PO Box #3, Bivalve, MD 21814</p>
         <p>Hours: Mon-Fri, 9 AM - 5 PM</p>
       </div>
       <form className="space-y-4">
