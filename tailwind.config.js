@@ -31,6 +31,7 @@ module.exports = {
         "primary-red": "#AF3634",
         "accent-red": "#64261C",
         "almost-black": "#1A1A1A",
+        "off-white": "#FAFCFE",
       },
       keyframes: {
         roll: {
