@@ -1,16 +1,23 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import { LuPhone } from "react-icons/lu";
 import { RxCaretDown, RxHamburgerMenu } from "react-icons/rx";
 import BackLink from "@/components/common/BackLink";
 import SocialButtons from "@/components/common/Footer/SocialButtons";
+import { Button, DailySurvey } from "@/components/Home/DailySurvey";
 
 export default function Home() {
+  const [open, setOpen] = React.useState(false);
+
   return (
-    <div className="flex min-h-screen xl:max-w-[1400px] mx-auto flex-col items-center justify-start">
+    <div className="relative flex flex-col items-center justify-start min-h-screen mx-auto">
       <NavigationBar />
+
       {/* Start of the content container */}
-      <div className="flex flex-col items-start space-y-4 gap-y-5  pt-12 w-full mt-8 min-h-screen max-w-[1200px] mx-auto max-lg:mx-2 ">
+      <DailySurvey />
+      <div className="flex flex-col items-start space-y-4 gap-y-5  pt-12 relative w-full mt-8 min-h-screen max-w-[1200px] mx-auto max-lg:mx-2 ">
         <div className="flex flex-wrap items-center justify-start w-full gap-2 md:gap-y-5 ">
           <h1 className="text-3xl font-bold leading-relaxed md:text-4xl">
             Hello, Donovan Anderson
@@ -71,8 +78,8 @@ export default function Home() {
 
 export const NavigationBar = () => {
   return (
-    <nav className="sticky top-0 flex-auto w-full bg-white ">
-      <div className="flex items-center px-2 self-stretch h-16 gap-2 lg:gap-3 border-b-2 border-b-[#E3E7ED]">
+    <nav className="sticky top-0 z-50 flex-auto w-full bg-white">
+      <div className="flex items-center px-2 self-stretch h-16 gap-2 lg:gap-3 border-b-2 border-b-[#E3E7ED] bg-white">
         <div className=" size-7">
           <RxHamburgerMenu size="lg" />
         </div>
