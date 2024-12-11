@@ -93,7 +93,7 @@ export const NavigationBar = () => {
           </span>
         </div>
         <div className="flex items-center justify-end h-12 mr-2 sm:gap-2 md:min-w-36 justify-self-end">
-          <div className="relative rounded-full size-11 bg-primary-red">
+          <div className="relative rounded-full size-11 bg-primaryred">
             <div className="absolute rounded-[52px] p-1 border-white border-2 border-spacing-1 bg-amber-300 size-5 left-2/3 top-2/3">
               <div className="text-center absolute text-white text-[9px] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 DA
@@ -280,7 +280,7 @@ export const WeekCard = ({ week, status }) => {
 export const DonateHero = () => {
   return (
     <>
-      <div className="w-[90%] max-w-[1000px] h-80 md:h-60 mx-auto max-md:max-w-[340px] relative bg-donate-mobile bg-top bg-accent-red md:bg-donate-desktop bg-no-repeat md:bg-right justify-self-center rounded-3xl">
+      <div className="w-[90%] max-w-[1000px] h-80 md:h-60 mx-auto max-md:max-w-[340px] relative bg-donate-mobile bg-top bg-primaryred-900 md:bg-donate-desktop bg-no-repeat md:bg-right justify-self-center rounded-3xl">
         <div className="flex max-md:flex-wrap flex-col w-[330px] md:w-[300px] max-md:hidden md:h-[210px] h-[270px] items-center justify-start md:justify-between md:items-start ml-3 mt-3 max-md:mt-[120px]">
           <h3 className="text-[28px] font-bold text-white tracking-wide">
             Donate
