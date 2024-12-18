@@ -65,7 +65,7 @@ export default function SignIn() {
       because the visible portion of the image will shift as the
       screen gets larger. Then it is horizontally centered it with mx-auto. 
       */}
-      <div className="bg-fixed bg-white bg-center bg-no-repeat bg-contain md:bg-top-4 max-md:bg-top min-h-72 md:bg-cover md:bg-origin-border md:overflow-x-clip md:w-1/2 md:order-2 max-md:w-full -z-50 bg-jesus-hero md:bg-clip-border"></div>
+      <div className="bg-fixed bg-white bg-center bg-no-repeat bg-contain md:bg-top-4  aspect-[773/499] max-md:bg-top min-h-72 md:bg-cover md:bg-origin-border md:overflow-x-clip md:w-1/2 md:order-2 max-md:w-full -z-50 bg-jesus-hero md:bg-clip-border"></div>
       {/* 
       The image is implemented as a background for Child 1. 
       "md:order-2" means that Child 1 will become Child 2 on medium screens. 
@@ -77,7 +77,7 @@ export default function SignIn() {
       Technically, this is not necessary, but I figured that it is a
       good practice to be explicit while trying to figure everything out. 
       */}
-      <div className="z-50 flex flex-col justify-start w-full gap-4 md:h-full md:items-center md:justify-center md:w-1/2">
+      <div className="z-10 flex flex-col justify-start w-full gap-4 md:h-full md:items-center md:justify-center md:w-1/2">
         {/* 
         This is inside the form container. On small screens, the form extends
         past the page height, so, I only set the height to full on Desktop
