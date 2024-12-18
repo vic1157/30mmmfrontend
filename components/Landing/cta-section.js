@@ -3,10 +3,10 @@ export function CTASection() {
     <section className="py-16 bg-white text-primary-red">
       <div className="container px-4 mx-auto text-center">
         <h2 className="mb-6 text-3xl font-bold md:text-4xl">
-          Ready to Start Your Journey?
+          Ready to Transform Your Life?
         </h2>
         <p className="mb-8 text-xl">
-          Join us in creating a community of emotionally healthy disciples.
+          Join us in becoming men who lead with purpose, integrity, and faith.
         </p>
         <button
           type="submit"

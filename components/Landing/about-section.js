@@ -18,11 +18,15 @@ export function AboutSection() {
             <h2 className="mb-6 text-3xl font-bold md:text-4xl">
               About 30 Mighty Men Ministries
             </h2>
+            <p className="mb-6 text-xl italic md:text-2xl">
+              30MMM: A Ministry for Men, by Men
+            </p>
             <p className="mb-6 text-lg text-muted-foreground">
-              Emotionally Healthy is dedicated to helping individuals and
-              communities grow in emotional and spiritual maturity. Our mission
-              is to equip people with the tools and resources they need to live
-              fulfilling, balanced lives.
+              Founded by Dr. Donovan Anderson, 30MMM exists to guide men toward
+              a life of obedience, purpose, and brotherhood. With a unique,
+              actionable approach to Scripture, Dr. Anderson combines his
+              theological expertise and life experience to equip men to grow
+              into the leaders, husbands, and fathers God intended them to be.
             </p>
             <button
               type="submit"
