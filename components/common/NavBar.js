@@ -1,12 +1,20 @@
 import React from "react";
-import Link from "next/link";
+import logo from "@/public/logo.png";
 import Image from "next/image";
-import logo from "../assets/logo.png";
+import Link from "next/link";
 
 export default function NavBar() {
   return (
-    <nav className="bg-blue-600 p-4 text-black flex items-center justify-between">
-      <Image src={logo} alt="30 Mighty Men Ministries Logo" width={50} height={50} />
+    <nav className="flex items-center justify-between p-4 text-black bg-white">
+      <div className="flex flex-row gap-x-3">
+        <Image
+          src={logo}
+          alt="30 Mighty Men Ministries Logo"
+          width={25}
+          height={25}
+        />
+        <div>30 Mighty Men Ministries</div>
+      </div>
       <ul className="flex space-x-4">
         <li>
           <Link href="/signin">Sign In</Link>

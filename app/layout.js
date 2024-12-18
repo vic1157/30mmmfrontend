@@ -1,5 +1,7 @@
 import { Alexandria } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/common/Footer/Footer";
+import NavBar from "@/components/common/NavBar";
 
 const alexandria = Alexandria({ subsets: ["latin"], display: "swap" });
 
@@ -13,7 +15,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${alexandria.className} subpixel-antialiased`}>
+        <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
