@@ -44,7 +44,7 @@ export function ResourcesSection() {
                 </p>
                 <button
                   type="button"
-                  className="px-4 py-2 text-white bg-blue-600 rounded-md"
+                  className="px-4 py-2 text-white rounded-md bg-primary-red"
                 >
                   Learn More
                 </button>
