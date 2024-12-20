@@ -59,15 +59,6 @@ export default function NavBar() {
         <li>
           <Link href="/signin">Sign In</Link>
         </li>
-        <li>
-          <Link href="/settings">Settings</Link>
-        </li>
-        <li>
-          <Link href="/foundation">Foundation</Link>
-        </li>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
       </ul>
     </nav>
   );
