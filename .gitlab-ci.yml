@@ -1,0 +1,32 @@
+image: node:latest
+
+stages:
+  - build
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
+
+before_script:
+  - npm install
+
+build:
+  stage: build
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - .next/
+
+deploy:
+  stage: deploy
+  only:
+    - main # Change this to your production branch if it's not 'main'
+  script:
+    - npm install -g vercel
+    - echo "logging into vercel..."
+    - vercel --prod --token=$VERCEL_TOKEN deploy --yes
+    # - echo "deploying project..."
+    # - vercel deploy --yes
+# --scope=$VERCEL_ORG --project=$VERCEL_PROJECT
