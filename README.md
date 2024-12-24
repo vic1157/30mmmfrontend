@@ -6,14 +6,11 @@ A nextjs frontend for the Clean program. This will connect to the .NET backend p
 
 ## Tech Stack
 
-- Vercel for Deployment; watch [this](https://www.youtube.com/watch?v=jsuNjCAngnQ)
-  - poor design can create a big bill; need to avoid this.
-- Nextjs has a built in cache
-- using reactQuery caches things automatically too
-  - using fetch or axios to do requests, but ReactQuery helps with caching and optimization.
+- Nextjs
+- ReactQuery / fetch / axios
 - Gitlab CI for deploying to Vercel
-- MongoDB Atlas for DB
-- GraphQL API in AWS with API Gateway and Lambda function
+- Azure CosmoDB
+- GraphQL API
 - Clerk for Authentication
 
 Other potential tech:
@@ -27,6 +24,7 @@ Other potential tech:
 - Donovan Anderson
 - Aaron Dantley
 - William Learned
+- Vic Ariyo
 
 ## Color Map
 
