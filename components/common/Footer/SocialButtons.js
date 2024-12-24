@@ -1,10 +1,10 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
+import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
 
 export default function SocialButtons() {
   return (
-    <div className="flex flex-row gap-x-5 mt-[2vh]">
+    <div className="flex flex-row items-center justify-center gap-x-5 mt-[2vh]">
       <FBButton />
       <TwButton />
       <YTButton />

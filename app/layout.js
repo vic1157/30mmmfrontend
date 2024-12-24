@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${alexandria.className} antialiased h-screen relative`}>
+      <body className={`${alexandria.className} subpixel-antialiased`}>
         {children}
       </body>
     </html>
