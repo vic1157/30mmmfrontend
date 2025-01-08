@@ -1,4 +1,11 @@
 import { Alexandria } from "next/font/google";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs';
 import "./globals.css";
 
 const alexandria = Alexandria({ subsets: ["latin"], display: "swap" });
@@ -9,12 +16,16 @@ export const metadata = {
   keywords: "30 Men Ministries, Clean, Donovan Anderson",
 };
 
+
+
 export default function RootLayout({ children }) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <body className={`${alexandria.className} subpixel-antialiased`}>
         {children}
       </body>
     </html>
+    </ClerkProvider>
   );
 }
