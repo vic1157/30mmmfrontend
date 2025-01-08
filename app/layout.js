@@ -16,11 +16,11 @@ export const metadata = {
   keywords: "30 Men Ministries, Clean, Donovan Anderson",
 };
 
-const publishableKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
-
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider publishableKey={publishableKey}>
+    <ClerkProvider
+      publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+    >
       <html lang="en">
         <body className={`${alexandria.className} subpixel-antialiased`}>
           {children}
