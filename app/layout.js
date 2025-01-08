@@ -1,11 +1,11 @@
-import { Alexandria } from "next/font/google";
 import {
   ClerkProvider,
-  SignInButton,
   SignedIn,
   SignedOut,
-  UserButton
-} from '@clerk/nextjs';
+  SignInButton,
+  UserButton,
+} from "@clerk/nextjs";
+import { Alexandria } from "next/font/google";
 import "./globals.css";
 
 const alexandria = Alexandria({ subsets: ["latin"], display: "swap" });
@@ -16,16 +16,16 @@ export const metadata = {
   keywords: "30 Men Ministries, Clean, Donovan Anderson",
 };
 
-
+const publishableKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
 
 export default function RootLayout({ children }) {
   return (
-    <ClerkProvider>
-    <html lang="en">
-      <body className={`${alexandria.className} subpixel-antialiased`}>
-        {children}
-      </body>
-    </html>
+    <ClerkProvider publishableKey={publishableKey}>
+      <html lang="en">
+        <body className={`${alexandria.className} subpixel-antialiased`}>
+          {children}
+        </body>
+      </html>
     </ClerkProvider>
   );
 }
