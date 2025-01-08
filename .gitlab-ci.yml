@@ -2,7 +2,7 @@ image: node:21
 
 stages:
   - build
-  - deploy
+  # - deploy
 
 cache:
   paths:
@@ -19,12 +19,11 @@ build:
   artifacts:
     paths:
       - .next/
-
-deploy:
-  stage: deploy
-  only:
-    - main # Change this to your production branch if it's not 'main'
-  script:
-    - npm install -g vercel
-    - echo "Logging into Vercel..."
-    - vercel --prod --token=$VERCEL_TOKEN --env NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=$NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY deploy --yes
+# deploy:
+#   stage: deploy
+#   only:
+#     - main # Change this to your production branch if it's not 'main'
+#   script:
+#     - npm install -g vercel
+#     - echo "Logging into Vercel..."
+#     - vercel --prod --token=$VERCEL_TOKEN --env NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=$NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY deploy --yes
