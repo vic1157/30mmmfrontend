@@ -14,7 +14,8 @@ before_script:
 build:
   stage: build
   script:
-    - npm run build
+    - echo "Building the application..."
+    - NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=$NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY npm run build
   artifacts:
     paths:
       - .next/
@@ -25,8 +26,5 @@ deploy:
     - main # Change this to your production branch if it's not 'main'
   script:
     - npm install -g vercel
-    - echo "logging into vercel..."
+    - echo "Logging into Vercel..."
     - vercel --prod --token=$VERCEL_TOKEN deploy --yes
-    # - echo "deploying project..."
-    # - vercel deploy --yes
-# --scope=$VERCEL_ORG --project=$VERCEL_PROJECT
