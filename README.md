@@ -129,5 +129,3 @@ async function run() {
 }
 run().catch(console.dir);
 ```
-
-# update to run pipeline
