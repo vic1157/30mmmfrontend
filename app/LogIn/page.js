@@ -1,12 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
+import { SignIn, SignInButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
-import BackLink from "@/components/common/BackLink";
-import FormPanel from "@/components/LogIn/FormPanel";
-// local components
-import PhotoPanel from "@/components/LogIn/PhotoPanel";
 
 export default function LogIn() {
   const [formData, setFormData] = useState({
@@ -33,12 +30,10 @@ export default function LogIn() {
 
   return (
     <div className="inset-auto flex flex-col w-screen min-w-[400px] h-screen md:flex-row">
-      <div className="fixed z-20 py-1 rounded-md max-md:shadow-md bg-white/80 top-2 left-2 before:static ">
-      </div>
-      <div className=" bg-white bg-center aspect-[773/499] bg-no-repeat bg-contain max-xs:scale-x-125 sm:self-stretch md:bg-top-4 max-md:h-fit max-md:bg-top min-h-72 md:bg-cover md:bg-origin-border md:overflow-x-clip md:w-3/4 md:order-2 max-md:w-screen -z-50 bg-jesus-hero md:bg-clip-border">
-      </div>
+      <div className="fixed z-20 py-1 rounded-md max-md:shadow-md bg-white/80 top-2 left-2 before:static "></div>
+      <div className=" bg-white bg-center aspect-[773/499] bg-no-repeat bg-contain max-xs:scale-x-125 sm:self-stretch md:bg-top-4 max-md:h-fit max-md:bg-top min-h-72 md:bg-cover md:bg-origin-border md:overflow-x-clip md:w-3/4 md:order-2 max-md:w-screen -z-50 bg-jesus-hero md:bg-clip-border"></div>
       <div className="z-10 flex flex-col w-full gap-1 md:gap-3 max-md:justify-between md:h-full md:pt-7 md:items-center md:justify-between md:w-1/2">
-      <Image
+        <Image
           className="z-10 block mx-auto -mt-16 md:mt-16"
           src="/logo.png"
           alt="Logo"
@@ -49,7 +44,7 @@ export default function LogIn() {
         <h1 className="text-4xl font-semibold text-center md:mb-6">
           Welcome Back!
         </h1>
-        <>
+        <SignInButton>
           <button className="flex items-center justify-center w-5/6 py-2 mx-auto my-4 shadow-md outline outline-1 outline-primary-red rounded-2xl columns-1 gap-7 justify-self-center">
             <Image
               className="object-cover contain-layout overflow-x-clip"
@@ -58,11 +53,12 @@ export default function LogIn() {
               width={20}
               height={20}
             />
+
             <div className="text-lg font-semibold text-primary-red">
               Login with Google
             </div>
           </button>
-        </>
+        </SignInButton>
         <div className="flex items-center w-full md:my-2 px-52 gap-x-5 ">
           <hr className="flex-auto w-2/6 border-gray-300 border-1 " />
           <p className="text-base text-black">or</p>
