@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { SignIn, SignInButton } from "@clerk/nextjs";
+import { SignInButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -44,7 +44,16 @@ export default function LogIn() {
         <h1 className="text-4xl font-semibold text-center md:mb-6">
           Welcome Back!
         </h1>
-        <SignInButton>
+        <SignInButton
+          mode="redirect"
+          redirectUrl={
+            process.env.NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL || "/Dashboard"
+          }
+          signInUrlFallback={
+            process.env.NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL ||
+            "/SignIn"
+          }
+        >
           <button className="flex items-center justify-center w-5/6 py-2 mx-auto my-4 shadow-md outline outline-1 outline-primary-red rounded-2xl columns-1 gap-7 justify-self-center">
             <Image
               className="object-cover contain-layout overflow-x-clip"
@@ -53,7 +62,6 @@ export default function LogIn() {
               width={20}
               height={20}
             />
-
             <div className="text-lg font-semibold text-primary-red">
               Login with Google
             </div>

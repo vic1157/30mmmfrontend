@@ -8,7 +8,7 @@ import BackLink from "@/components/common/BackLink";
 import SocialButtons from "@/components/common/Footer/SocialButtons";
 import { Button, DailySurvey } from "@/components/Home/DailySurvey";
 
-export default function Home() {
+export default function Dashboard() {
   const [open, setOpen] = React.useState(false);
 
   return (

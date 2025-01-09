@@ -56,6 +56,13 @@ export default function SignIn() {
 
   return (
     <div className="w-screen h-screen mx-auto max-w-screen-2xl md:flex">
+      <SignIn
+        path="/SignIn"
+        routing="path"
+        redirectUrl={
+          process.env.NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL || "/Dashboard"
+        }
+      />
       <div className="fixed z-20 py-1 rounded-md max-md:shadow-md bg-white/80 top-2 left-2 before:static ">
         <BackLink />
       </div>

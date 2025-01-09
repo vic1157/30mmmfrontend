@@ -12,8 +12,8 @@ export default function SignIn() {
       <Link href="/Settings" className="text-center">
         Settings
       </Link>
-      <Link href="/Home" className="text-center">
-        Home
+      <Link href="/Dashboard" className="text-center">
+        Dashboard
       </Link>
       <Link href="/Foundation" className="text-center">
         Foundation
