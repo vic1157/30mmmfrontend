@@ -47,11 +47,11 @@ export default function LogIn() {
         <SignInButton
           mode="redirect"
           redirectUrl={
-            process.env.NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL || "/Dashboard"
+            process.env.NEXT_PUBLIC_CLERK_SIGN_IN_FORCE_REDIRECT_URL || "/Dashboard"
           }
           signInUrlFallback={
-            process.env.NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL ||
-            "/SignIn"
+            process.env.NEXT_PUBLIC_CLERK_SIGN_UP_FORCE_REDIRECT_URL ||
+            "/Dashboard"
           }
         >
           <button className="flex items-center justify-center w-5/6 py-2 mx-auto my-4 shadow-md outline outline-1 outline-primary-red rounded-2xl columns-1 gap-7 justify-self-center">
