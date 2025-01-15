@@ -1,13 +1,13 @@
 import Link from "next/link";
 
-export default function SignIn() {
+export default function RootPage() {
   return (
     <main className="grid grid-cols-4 gap-4 w-[80vw] h-[80vh] mx-auto mt-[20vh]">
       <Link href="/LogIn" className="text-center">
         Log In
       </Link>
-      <Link href="/SignIn" className="text-center">
-        Sign In
+      <Link href="/SignUp" className="text-center">
+        Sign Up
       </Link>
       <Link href="/Settings" className="text-center">
         Settings

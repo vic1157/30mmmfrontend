@@ -31,7 +31,7 @@ export default function LogIn() {
   return (
     <div className="inset-auto flex flex-col w-screen min-w-[400px] h-screen md:flex-row">
       <div className="fixed z-20 py-1 rounded-md max-md:shadow-md bg-white/80 top-2 left-2 before:static "></div>
-      <div className=" bg-white bg-center aspect-[773/499] bg-no-repeat bg-contain max-xs:scale-x-125 sm:self-stretch md:bg-top-4 max-md:h-fit max-md:bg-top min-h-72 md:bg-cover md:bg-origin-border md:overflow-x-clip md:w-3/4 md:order-2 max-md:w-screen -z-50 bg-jesus-hero md:bg-clip-border"></div>
+      <div className=" bg-white bg-center aspect-[773/499] bg-no-repeat bg-cover max-xs:scale-x-125 sm:self-stretch md:bg-top-4 max-md:h-fit max-md:bg-top min-h-72 md:bg-cover md:bg-origin-border md:overflow-x-clip md:w-3/4 md:order-2 max-md:w-full -z-50 bg-jesus-hero md:bg-clip-border"></div>
       <div className="z-10 flex flex-col w-full gap-1 md:gap-3 max-md:justify-between md:h-full md:pt-7 md:items-center md:justify-between md:w-1/2">
         <Image
           className="z-10 block mx-auto -mt-16 md:mt-16"
@@ -107,7 +107,7 @@ export default function LogIn() {
           <div className="inline-flex items-center justify-center w-full gap-2 -mt-8 text-xs font-light text-center">
             <span className="gap-2 tracking-tight">Not registered yet?</span>
             <Link
-              href="/register"
+              href="/SignUp"
               className="tracking-tighter text-primary-red"
             >
               Create an Account
