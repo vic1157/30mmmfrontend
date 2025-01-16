@@ -98,7 +98,7 @@ export default function SignIn() {
         <div className="inline-flex flex-row justify-between mx-10 text-center md:overflow-y-hidden my-mx-52 md: my min-h-max gap-x-3 rounded-3xl bg-gray-bg items-stetch">
           <button
             onClick={() => setFirstTabActive(true)}
-            className={`w-full h-full px-4 py-2 text-base font-light rounded-3xl text-nowrap hover:bg-almost-black hover:text-white active:text-white active:bg-almost-black hover:font-medium active:font-medium ${
+            className={`w-full h-full ps-4 pe-2 py-2 text-base font-light rounded-3xl text-nowrap hover:bg-almost-black hover:text-white active:text-white active:bg-almost-black hover:font-medium active:font-medium ${
               firstTabActive ? "bg-almost-black text-white font-medium" : ""
             }`}
           >
@@ -106,7 +106,7 @@ export default function SignIn() {
           </button>
           <button
             onClick={() => setFirstTabActive(false)}
-            className={`w-full h-full px-2 py-2 text-base font-light rounded-3xl text-nowrap hover:bg-almost-black hover:text-white active:text-white active:bg-almost-black hover:font-medium active:font-medium ${
+            className={`w-full h-full ps-3 pe-4 py-2 text-base font-light rounded-3xl text-nowrap hover:bg-almost-black hover:text-white active:text-white active:bg-almost-black hover:font-medium active:font-medium ${
               firstTabActive ? "" : "bg-almost-black text-white font-medium"
             }`}
           >
