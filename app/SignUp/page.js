@@ -3,9 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import BackLink from "@/components/common/BackLink";
-import Logo from "@/components/common/Logo";
-import GoogleButton from "@/components/LogIn/googleButton";
 
 /* 
   This is a version of the registration page that tracks state and "submits" the form data to the console. It also has a tabbed interface for personal information and address information. 
@@ -55,9 +52,9 @@ export default function SignIn() {
   };
 
   return (
-    <div className="inset-auto flex flex-col w-screen min-w-[400px] h-screen md:flex-row">
+    <div className="inset-auto flex flex-col w-screen min-w-[400px] min-h-screen md:flex-row">
       <div className="fixed z-20 py-1 rounded-md max-md:shadow-md bg-white/80 top-2 left-2 before:static" />
-      
+
       {/* Image Container - Matched to reference styling */}
       <div className="bg-white bg-center aspect-[773/499] bg-no-repeat bg-cover max-xs:scale-x-125 sm:self-stretch md:bg-top-4 max-md:h-fit max-md:bg-top min-h-72 md:bg-cover md:bg-origin-border md:overflow-x-clip md:w-3/4 md:order-2 max-md:w-full -z-50 bg-jesus-hero md:bg-clip-border" />
 
@@ -70,9 +67,9 @@ export default function SignIn() {
           width={120}
           height={120}
         />
-        
+
         <h1 className="text-4xl font-semibold text-center md:mb-6">Sign Up</h1>
-        
+
         {/* Google Sign Up Button */}
         <button className="flex items-center justify-center w-5/6 py-2 mx-auto my-4 shadow-md outline outline-1 outline-primary-red rounded-2xl columns-1 gap-7 justify-self-center">
           <Image
