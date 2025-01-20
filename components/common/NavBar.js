@@ -9,7 +9,7 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="flex flex-row justify-between p-4 mx-10 mt-5 text-black bg-white">
+    <nav className="flex flex-row justify-between p-4 mx-10 bg-white ext-black">
       <div className="flex flex-row items-center gap-2">
         <Image
           src={logo}

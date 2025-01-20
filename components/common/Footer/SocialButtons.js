@@ -1,12 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import { FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaTiktok, FaYoutube } from "react-icons/fa";
 
 export default function SocialButtons() {
   return (
     <div className="flex flex-row items-center justify-center gap-x-5 mt-[2vh]">
       <FBButton />
       <YTButton />
+      <TikTokButton />
     </div>
   );
 }
@@ -26,6 +27,16 @@ function YTButton() {
     <div className="text-[#7D899D] bg-[#ECEEF1] rounded-full p-3 items-center justify-center">
       <Link href="https://www.youtube.com/@ThirtyMightyMen" target="_blank">
         <FaYoutube />
+      </Link>
+    </div>
+  );
+}
+
+function TikTokButton() {
+  return (
+    <div className="text-[#7D899D] bg-[#ECEEF1] rounded-full p-3 items-center justify-center">
+      <Link href="https://www.tiktok.com/@thirtymightymen" target="_blank">
+        <FaTiktok />
       </Link>
     </div>
   );

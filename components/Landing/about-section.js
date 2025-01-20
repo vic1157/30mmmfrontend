@@ -1,4 +1,5 @@
 import Image from "next/image";
+import YouTubeVideo from "../common/YouTubeVideoEmbedding";
 
 export function AboutSection() {
   return (
@@ -6,13 +7,7 @@ export function AboutSection() {
       <div className="container px-4 mx-auto">
         <div className="flex flex-col items-center gap-12 md:flex-row">
           <div className="md:w-1/2">
-            <Image
-              src="/placeholder.svg?height=400&width=600&text=About+Us"
-              width={600}
-              height={400}
-              alt="About 30 Mighty Men Ministries"
-              className="rounded-lg shadow-md"
-            />
+            <YouTubeVideo videoId="bKRDyeBvzCU" />
           </div>
           <div className="md:w-1/2">
             <h2 className="mb-6 text-3xl font-bold md:text-4xl">
