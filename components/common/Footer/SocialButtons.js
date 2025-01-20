@@ -6,7 +6,6 @@ export default function SocialButtons() {
   return (
     <div className="flex flex-row items-center justify-center gap-x-5 mt-[2vh]">
       <FBButton />
-      <TwButton />
       <YTButton />
     </div>
   );
@@ -15,15 +14,9 @@ export default function SocialButtons() {
 function FBButton() {
   return (
     <div className="text-[#7D899D] bg-[#ECEEF1] rounded-full p-3 items-center justify-center">
-      <FaFacebookF />
-    </div>
-  );
-}
-
-function TwButton() {
-  return (
-    <div className="text-[#7D899D] bg-[#ECEEF1] rounded-full p-3 items-center justify-center">
-      <FaTwitter />
+      <Link href="https://www.facebook.com/30mmministries" target="_blank">
+        <FaFacebookF />
+      </Link>
     </div>
   );
 }
@@ -31,7 +24,9 @@ function TwButton() {
 function YTButton() {
   return (
     <div className="text-[#7D899D] bg-[#ECEEF1] rounded-full p-3 items-center justify-center">
-      <FaYoutube />
+      <Link href="https://www.youtube.com/@ThirtyMightyMen" target="_blank">
+        <FaYoutube />
+      </Link>
     </div>
   );
 }
