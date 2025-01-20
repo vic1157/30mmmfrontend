@@ -6,16 +6,19 @@ export function ResourcesSection() {
       title: "Courses",
       description:
         "Engage in transformative programs designed to help you align with God’s purpose. From conquering personal struggles like lust through CLEAN, to serving your community through hands-on training in The Carpenter’s Son, these courses equip you for a God-centered life of purpose, integrity, and service.",
+      link: "/courses.webp",
     },
     {
       title: "Books",
       description:
         "Immerse yourself in actionable guides and devotionals like the 5-day video devotional or the 35-day CLEAN devotional. These resources provide the tools to deepen your relationship with Christ and live in alignment with His teachings.",
+      link: "/books.webp",
     },
     {
       title: "Podcasts",
       description:
         "Hear real stories, practical advice, and spiritual insights from men who’ve walked the path you’re stepping into. Let these conversations inspire and equip you to thrive in faith, purpose, and brotherhood.",
+      link: "/podcasts.webp",
     },
   ];
   return (
@@ -31,11 +34,11 @@ export function ResourcesSection() {
               className="overflow-hidden bg-white rounded-lg shadow-md"
             >
               <Image
-                src={`/placeholder.svg?height=200&width=400&text=${resource.title}`}
-                width={400}
-                height={200}
+                src={`${resource.link}`}
+                width={600}
+                height={400}
                 alt={resource.title}
-                className="object-cover w-full h-48"
+                className="items-center object-cover w-full h-100"
               />
               <div className="p-6">
                 <h3 className="mb-2 text-xl font-semibold">{resource.title}</h3>
