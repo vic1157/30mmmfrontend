@@ -7,8 +7,7 @@ export function TestimonialsSection() {
         "This whole thing teaches you discipline. This is not just for lust.",
     },
     {
-      quote:
-        "I needed to purge myself physically and spiritually.",
+      quote: "I needed to purge myself physically and spiritually.",
     },
     {
       quote:
@@ -22,6 +21,10 @@ export function TestimonialsSection() {
         <h2 className="mb-12 text-3xl font-bold text-center md:text-4xl">
           What People Are Saying
         </h2>
+        <p className="mb-12 text-xl text-center md:text-xl">
+          These testimonials are kept anonymous for the privacy and safety of
+          our community.
+        </p>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {testimonials.map((testimonial, index) => (
             <div
