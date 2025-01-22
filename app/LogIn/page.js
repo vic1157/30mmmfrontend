@@ -46,7 +46,7 @@ export default function LogIn() {
         </h1>
         <SignInButton
           mode="redirect"
-          redirectUrl={
+          redirecturl={
             process.env.NEXT_PUBLIC_CLERK_SIGN_IN_FORCE_REDIRECT_URL ||
             "/Dashboard"
           }

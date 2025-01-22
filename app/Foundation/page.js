@@ -33,7 +33,7 @@ export default function Foundation() {
         {/* main content container */}
         <div className="flex flex-col md:max-w-7xl lg:max-w-10xl">
           {/* text container */}
-          <div className="flex flex-col items-start bg-white md:flex-col">
+          <div className="flex flex-col items-start mb-8 bg-white md:flex-col">
             {/* title */}
             <div className="mt-[3vh]">
               <Title />
@@ -84,11 +84,6 @@ export default function Foundation() {
             {/* complete lesson container */}
             <div className="flex w-full justify-center mt-[2vh]">
               <CompleteLesson />
-            </div>
-
-            {/* Footer */}
-            <div className="flex items-center w-full mt-[10vh] justify-center">
-              <Footer />
             </div>
           </div>
         </div>
