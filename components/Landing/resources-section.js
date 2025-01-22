@@ -7,28 +7,28 @@ export function ResourcesSection() {
       description:
         "Gain asynchronous access to the Clean program community platform, the ebook, and inspiring video devotionals. Perfect for those seeking encouragement from a supportive Christian community while working at their own pace. This package is ideal for men taking their first steps toward sexual integrity.",
       price: "$200",
-      link: "/basic.webp",
+      link: "/bronze.webp",
     },
     {
       title: "silver",
       description:
         "Build on the foundation of the Bronze package with live guidance from personally vetted and experienced facilitators delivering the content directly. This 3-month program provides deeper engagement through a structured approach, offering the tools and accountability needed for lasting transformation.",
       price: "$1500",
-      link: "/1st-tier.webp",
+      link: "/silver.webp",
     },
     {
       title: "gold",
       description:
         "Enjoy all the benefits of the Silver package with extended access to the program for six months. This tier allows for greater immersion and sustained growth as you work closely with facilitators and engage deeply with the community.",
       price: "$2500",
-      link: "/2nd-tier.webp",
+      link: "/gold.webp",
     },
     {
       title: "platinum",
       description:
         "Experience the ultimate Clean program led by Dr. Donovan Anderson himself. This exclusive tier includes the direct involvement of the founder and his hand-selected team, providing unparalleled guidance, personal insight, and mentorship. This premium 6-month program is designed for men ready to fully commit to transformation.",
       price: "$3000",
-      link: "/3rd-tier.webp",
+      link: "/platinum.webp",
     },
   ];
   return (
@@ -41,7 +41,7 @@ export function ResourcesSection() {
           Each package has a maximum of 10 people, and will be split into two
           groups of 5 for effective and personal discipleship.
         </p>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           {resourceDetails.map((resource, index) => (
             <div
               key={index}
