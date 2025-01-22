@@ -41,7 +41,7 @@ export function ResourcesSection() {
           Each package has a maximum of 10 people, and will be split into two
           groups of 5 for effective and personal discipleship.
         </p>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
           {resourceDetails.map((resource, index) => (
             <div
               key={index}
