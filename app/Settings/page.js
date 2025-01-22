@@ -9,7 +9,6 @@ export default function Settings() {
 
   return (
     <>
-      <BackLink />
       <div className="flex flex-col items-center justify-start w-full min-h-screen gap-3">
         <h1 className="text-4xl font-semibold text-center">Account Settings</h1>
         <div className="grid items-center justify-center rounded-full size-20 bg-rose-600">
