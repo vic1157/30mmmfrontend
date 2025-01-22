@@ -1,38 +1,19 @@
-import Link from "next/link";
+import Head from "next/head";
+import Image from "next/image";
+import { AboutSection } from "@/components/Landing/about-section";
+import { CTASection } from "@/components/Landing/cta-section";
+import { HeroSection } from "@/components/Landing/hero-section";
+import { ResourcesSection } from "@/components/Landing/resources-section";
+import { TestimonialsSection } from "@/components/Landing/testimonials-section";
 
-export default function RootPage() {
+export default function LandingPage() {
   return (
-    <main className="grid grid-cols-4 gap-4 w-[80vw] h-[80vh] mx-auto mt-[20vh]">
-      <Link href="/LogIn" className="text-center">
-        Log In
-      </Link>
-      <Link href="/SignUp" className="text-center">
-        Sign Up
-      </Link>
-      <Link href="/Settings" className="text-center">
-        Settings
-      </Link>
-      <Link href="/Dashboard" className="text-center">
-        Dashboard
-      </Link>
-      <Link href="/Foundation" className="text-center">
-        Foundation
-      </Link>
-      <Link href="/Contact" className="text-center">
-        Contact
-      </Link>
-      <Link href="/Help" className="text-center">
-        Help & Support
-      </Link>
-      <Link href="/Terms" className="text-center">
-        Terms of Service
-      </Link>
-      <Link href="/Landing" className="text-center">
-        Landing Page
-      </Link>
-
-      <div>Loading Page</div>
-      <div>Error Page</div>
-    </main>
+    <div className="min-h-screen">
+      <HeroSection />
+      <ResourcesSection />
+      <AboutSection />
+      <TestimonialsSection />
+      <CTASection />
+    </div>
   );
 }

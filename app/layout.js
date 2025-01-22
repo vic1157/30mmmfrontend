@@ -7,6 +7,8 @@ import {
 } from "@clerk/nextjs";
 import { Alexandria } from "next/font/google";
 import "./globals.css";
+import Footer from "@/components/common/Footer/Footer";
+import NavBar from "@/components/common/NavBar";
 
 const alexandria = Alexandria({ subsets: ["latin"], display: "swap" });
 
@@ -37,7 +39,9 @@ export default function RootLayout({ children }) {
         }}
       >
         <body className={`${alexandria.className} subpixel-antialiased`}>
+          <NavBar />
           {children}
+          <Footer />
         </body>
       </ClerkProvider>
     </html>

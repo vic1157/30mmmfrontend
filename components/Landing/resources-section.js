@@ -55,16 +55,20 @@ export function ResourcesSection() {
                 className="items-center object-cover w-full h-70"
               />
               <div className="p-6">
-                <h3 className="mb-2 text-xl font-semibold">{resource.title}</h3>
+                <h3 className="mb-2 text-xl font-semibold uppercase">
+                  {resource.title}
+                </h3>
                 <p className="mb-4 text-muted-foreground">
                   {resource.description}
                 </p>
-                <button
-                  type="button"
-                  className="px-4 py-2 text-white rounded-md bg-primary-red"
-                >
-                  Learn More
-                </button>
+                <div className="flex items-center justify-between w-full gap-4 mt-4">
+                  <button
+                    type="button"
+                    className="px-4 py-2 text-white rounded-md bg-primary-red"
+                  >
+                    Learn More
+                  </button>
+                </div>
               </div>
             </div>
           ))}
