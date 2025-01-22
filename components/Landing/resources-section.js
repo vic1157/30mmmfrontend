@@ -3,22 +3,32 @@ import Image from "next/image";
 export function ResourcesSection() {
   const resourceDetails = [
     {
-      title: "Courses",
+      title: "bronze",
       description:
-        "Engage in transformative programs designed to help you align with God’s purpose. From conquering personal struggles like lust through CLEAN, to serving your community through hands-on training in The Carpenter’s Son, these courses equip you for a God-centered life of purpose, integrity, and service.",
-      link: "/courses.webp",
+        "Gain asynchronous access to the Clean program community platform, the ebook, and inspiring video devotionals. Perfect for those seeking encouragement from a supportive Christian community while working at their own pace. This package is ideal for men taking their first steps toward sexual integrity.",
+      price: "$200",
+      link: "/basic.webp",
     },
     {
-      title: "Books",
+      title: "silver",
       description:
-        "Immerse yourself in actionable guides and devotionals like the 5-day video devotional or the 35-day CLEAN devotional. These resources provide the tools to deepen your relationship with Christ and live in alignment with His teachings.",
-      link: "/books.webp",
+        "Build on the foundation of the Bronze package with live guidance from personally vetted and experienced facilitators delivering the content directly. This 3-month program provides deeper engagement through a structured approach, offering the tools and accountability needed for lasting transformation.",
+      price: "$1500",
+      link: "/1st-tier.webp",
     },
     {
-      title: "Podcasts",
+      title: "gold",
       description:
-        "Hear real stories, practical advice, and spiritual insights from men who’ve walked the path you’re stepping into. Let these conversations inspire and equip you to thrive in faith, purpose, and brotherhood.",
-      link: "/podcasts.webp",
+        "Enjoy all the benefits of the Silver package with extended access to the program for six months. This tier allows for greater immersion and sustained growth as you work closely with facilitators and engage deeply with the community.",
+      price: "$2500",
+      link: "/2nd-tier.webp",
+    },
+    {
+      title: "platinum",
+      description:
+        "Experience the ultimate Clean program led by Dr. Donovan Anderson himself. This exclusive tier includes the direct involvement of the founder and his hand-selected team, providing unparalleled guidance, personal insight, and mentorship. This premium 6-month program is designed for men ready to fully commit to transformation.",
+      price: "$3000",
+      link: "/3rd-tier.webp",
     },
   ];
   return (
@@ -27,6 +37,10 @@ export function ResourcesSection() {
         <h2 className="mb-12 text-3xl font-bold text-center md:text-4xl">
           Our Resources
         </h2>
+        <p className="mb-12 text-xl text-center md:text-xl">
+          Each package has a maximum of 10 people, and will be split into two
+          groups of 5 for effective and personal discipleship.
+        </p>
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {resourceDetails.map((resource, index) => (
             <div
@@ -35,10 +49,10 @@ export function ResourcesSection() {
             >
               <Image
                 src={`${resource.link}`}
-                width={600}
-                height={400}
+                width={300}
+                height={200}
                 alt={resource.title}
-                className="items-center object-cover w-full h-100"
+                className="items-center object-cover w-full h-70"
               />
               <div className="p-6">
                 <h3 className="mb-2 text-xl font-semibold">{resource.title}</h3>

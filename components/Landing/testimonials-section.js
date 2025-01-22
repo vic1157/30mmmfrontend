@@ -4,21 +4,15 @@ export function TestimonialsSection() {
   const testimonials = [
     {
       quote:
-        "Emotionally Healthy has transformed my approach to discipleship and personal growth.",
-      author: "John Doe",
-      role: "Pastor",
+        "This whole thing teaches you discipline. This is not just for lust.",
     },
     {
       quote:
-        "The resources provided by Emotionally Healthy have been invaluable to our church community.",
-      author: "Jane Smith",
-      role: "Church Leader",
+        "I needed to purge myself physically and spiritually.",
     },
     {
       quote:
-        "I've seen remarkable changes in my life since starting this journey with Emotionally Healthy.",
-      author: "Mike Johnson",
-      role: "Participant",
+        "I was dating with no purpose...it broke unholy convenants with women",
     },
   ];
 
@@ -37,21 +31,6 @@ export function TestimonialsSection() {
               <blockquote className="mb-4 text-lg">
                 &quot;{testimonial.quote}&quot;
               </blockquote>
-              <div className="flex items-center">
-                <Image
-                  src={`/placeholder.svg?height=50&width=50&text=${testimonial.author[0]}`}
-                  width={50}
-                  height={50}
-                  alt={testimonial.author}
-                  className="mr-4 rounded-full"
-                />
-                <div>
-                  <p className="font-semibold">{testimonial.author}</p>
-                  <p className="text-sm text-muted-foreground">
-                    {testimonial.role}
-                  </p>
-                </div>
-              </div>
             </div>
           ))}
         </div>
