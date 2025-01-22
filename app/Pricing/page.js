@@ -12,7 +12,7 @@ const PricingPage = () => {
         "Ideal for men taking their first steps toward sexual integrity",
       ],
       price: "$200",
-      link: "/basic.webp",
+      link: "/bronze.webp",
     },
     {
       title: "silver",
@@ -23,7 +23,7 @@ const PricingPage = () => {
         "Offers tools and accountability needed for lasting transformation",
       ],
       price: "$1500",
-      link: "/1st-tier.webp",
+      link: "/silver.webp",
     },
     {
       title: "gold",
@@ -34,7 +34,7 @@ const PricingPage = () => {
         "Work closely with facilitators and engage deeply with the community",
       ],
       price: "$2500",
-      link: "/2nd-tier.webp",
+      link: "/gold.webp",
     },
     {
       title: "platinum",
@@ -45,7 +45,7 @@ const PricingPage = () => {
         "Premium 6-month program designed for men ready to fully commit to transformation",
       ],
       price: "$3000",
-      link: "/3rd-tier.webp",
+      link: "/platinum.webp",
     },
   ];
 
@@ -82,7 +82,7 @@ const PricingPage = () => {
                 <span className="text-xl font-bold text-gray-800">
                   {resource.price}
                 </span>
-                <button className="px-4 py-2 text-sm text-white uppercase transition rounded  bg-primary-red hover:bg-red-800">
+                <button className="px-4 py-2 text-sm text-white uppercase transition rounded bg-primary-red hover:bg-red-800">
                   Start Free Trial
                 </button>
               </div>
