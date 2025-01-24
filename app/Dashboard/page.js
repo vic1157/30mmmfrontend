@@ -1,19 +1,19 @@
 "use client";
 
 import React from "react";
+import { SignedIn, SignOutButton } from "@clerk/nextjs";
 import Link from "next/link";
-import { LuPhone } from "react-icons/lu";
 import { RxCaretDown, RxHamburgerMenu } from "react-icons/rx";
-import BackLink from "@/components/common/BackLink";
 import SocialButtons from "@/components/common/Footer/SocialButtons";
-import { Button, DailySurvey } from "@/components/Home/DailySurvey";
+import { DailySurvey } from "@/components/Home/DailySurvey";
 
 export default function Dashboard() {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <div className="relative flex flex-col items-center justify-start min-h-screen mx-auto">
-      <NavigationBar />
+    <SignedIn>
+      <div className="relative flex flex-col items-center justify-start min-h-screen mx-auto">
+        <NavigationBar />
 
       {/* Start of the content container */}
       <DailySurvey />
@@ -86,9 +86,9 @@ export const NavigationBar = () => {
           30 MMM CLEAN PROGRAM
         </div>
         <div className="inline-flex items-center gap-2 ml-auto cursor-pointer justify-self-end text-primary-red">
-          <LuPhone />
+          {/* <LuPhone /> */}
           <span className="text-sm font-medium text-primary-red">
-            Contact Us
+            <SignOutButton />
           </span>
         </div>
         <div className="flex items-center justify-end h-12 mr-2 sm:gap-2 md:min-w-36 justify-self-end">

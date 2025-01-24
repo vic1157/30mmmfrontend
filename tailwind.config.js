@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,13 +9,13 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        xs: "360px", // Custom breakpoint for 360px
+        xs: "360px",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "jesus-hero": "url('/jesus_hero.avif')",
+        "jesus-hero": "url('/jesus_hero.png')",
         "donate-desktop": "url('/donate-horiz.png')",
         "donate-mobile": "url('/donate-vert.png')",
         "lesson-card": "url('/week-card.png')",
@@ -89,13 +90,31 @@ module.exports = {
       },
       keyframes: {
         roll: {
-          "0%": { transform: "scale(0.96) rotate(0deg)", opacity: 1 },
-          "50%": { transform: "scale(1.04) rotate(180deg)", opacity: 0.8 },
-          "100%": { transform: "scale(0.90) rotate(360deg)", opacity: 1 },
+          "0%": {
+            transform: "scale(0.96) rotate(0deg)",
+            opacity: 1,
+          },
+          "50%": {
+            transform: "scale(1.04) rotate(180deg)",
+            opacity: 0.8,
+          },
+          "100%": {
+            transform: "scale(0.90) rotate(360deg)",
+            opacity: 1,
+          },
+        },
+        "caret-blink": {
+          "0%,70%,100%": {
+            opacity: "1",
+          },
+          "20%,50%": {
+            opacity: "0",
+          },
         },
       },
       animation: {
         roll: "roll 1.5s ease-in-out infinite",
+        "caret-blink": "caret-blink 1.25s ease-out infinite",
       },
       backgroundPosition: {
         "top-4": "left 20% top 0",
@@ -106,6 +125,9 @@ module.exports = {
       borderRadius: {
         most: "6.25rem",
         mid: "2.5rem",
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
     },
   },
