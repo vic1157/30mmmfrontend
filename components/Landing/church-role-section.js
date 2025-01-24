@@ -41,7 +41,13 @@ export function ChurchRoleSection() {
                 </li>
                 <li>
                   For every porn user, there’s a partner experiencing betrayal
-                  trauma, but most churches lack support programs.
+                  trauma, but most churches lack support programs.{" "}
+                  <a
+                    href="https://www.barna.com/trends/church-and-porn/"
+                    className="text-blue-600  hover:text-blue-800"
+                  >
+                    [1]
+                  </a>
                 </li>
               </ul>
             </div>
