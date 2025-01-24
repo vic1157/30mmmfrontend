@@ -12,7 +12,7 @@ export default function SocialButtons() {
   );
 }
 
-function FBButton() {
+export function FBButton() {
   return (
     <div className="text-[#7D899D] bg-[#ECEEF1] rounded-full p-3 items-center justify-center">
       <Link href="https://www.facebook.com/30mmministries" target="_blank">
@@ -22,7 +22,7 @@ function FBButton() {
   );
 }
 
-function YTButton() {
+export function YTButton() {
   return (
     <div className="text-[#7D899D] bg-[#ECEEF1] rounded-full p-3 items-center justify-center">
       <Link href="https://www.youtube.com/@ThirtyMightyMen" target="_blank">
@@ -32,7 +32,7 @@ function YTButton() {
   );
 }
 
-function TikTokButton() {
+export function TikTokButton() {
   return (
     <div className="text-[#7D899D] bg-[#ECEEF1] rounded-full p-3 items-center justify-center">
       <Link href="https://www.tiktok.com/@thirtymightymen" target="_blank">

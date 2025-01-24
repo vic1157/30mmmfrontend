@@ -3,34 +3,55 @@ import Image from "next/image";
 export function ResourcesSection() {
   const resourceDetails = [
     {
-      title: "bronze",
+      title: "clay tier",
+      headline: "Start Your Journey with CLEAN",
+      subheadline:
+        "Explore the CLEAN program with free access to introductory resources and a supportive community.",
       description:
-        "Gain asynchronous access to the Clean program community platform, the ebook, and inspiring video devotionals. Perfect for those seeking encouragement from a supportive Christian community while working at their own pace. This package is ideal for men taking their first steps toward sexual integrity.",
-      price: "$200",
-      link: "/bronze.webp",
+        "Introductory Resources: Access a selection of video devotionals and teaching content. Public Community Forum: Join a network of men on the same journey. Weekly Email Newsletters: Receive tips, encouragement, and updates.",
+      price: "Free",
+      link: "/clay-vessel.webp",
+      cta1: "Ready to take the first step? Join CLEAN Starter today and start your transformation journey.",
+      cta2: "Start Today",
     },
     {
-      title: "silver",
+      title: "wood tier",
+      headline: "CLEAN Essentials: Transform at Your Own Pace",
+      subheadline:
+        "Access all the core resources of the CLEAN program—video devotionals, teaching content, and a supportive community—on your own schedule. Add coaching for personalized guidance.",
       description:
-        "Build on the foundation of the Bronze package with live guidance from personally vetted and experienced facilitators delivering the content directly. This 3-month program provides deeper engagement through a structured approach, offering the tools and accountability needed for lasting transformation.",
+        "Self-Paced Learning: Complete the 5-week devotional journey at your own pace. Full Access to Resources: Video devotionals, electronic book, and downloadable tools. Private Online Community: Join a supportive network of like-minded men. Monthly Live Q&A: Participate in recorded live sessions with CLEAN leaders. Add Coaching: Enhance your experience with group or one-on-one coaching sessions.",
+      price: "$99/month",
+      link: "/wooden-vessel.webp",
+      cta1: "Ready to start your transformation? Join CLEAN Essentials today and take the first step at your own pace.",
+      cta2: "Start Today",
+    },
+    {
+      title: "silver tier",
+      headline: "Step into Leadership with CLEAN",
+      subheadline:
+        "Join a 5-week journey designed to equip you with the tools, training, and support to lead a thriving men’s ministry in your church.",
+      description:
+        "Advanced Training: Learn how to recruit, train, and disciple leaders within your church. Live Group Coaching: Participate in synchronous small group sessions for real-time interaction and support. Proven Resources: Access exclusive video content, downloadable tools, and a physical CLEAN book. Community Support: Join a private online community for networking and encouragement.",
       price: "$1500",
-      link: "/silver.webp",
+      link: "/silver-vessel.webp",
+      cta1: "Ready to grow as a leader? Join CLEAN Leadership today and take the next step in your transformation journey.",
+      cta2: "Start Today",
     },
     {
-      title: "gold",
+      title: "gold tier",
+      headline: "Become a CLEAN Vessel: Refined for Honorable Use",
+      subheadline:
+        "Join an exclusive, high-touch program designed to transform your church’s men’s ministry through customized strategies, proven programming, and personalized coaching.",
       description:
-        "Enjoy all the benefits of the Silver package with extended access to the program for six months. This tier allows for greater immersion and sustained growth as you work closely with facilitators and engage deeply with the community.",
-      price: "$2500",
-      link: "/gold.webp",
-    },
-    {
-      title: "platinum",
-      description:
-        "Experience the ultimate Clean program led by Dr. Donovan Anderson himself. This exclusive tier includes the direct involvement of the founder and his hand-selected team, providing unparalleled guidance, personal insight, and mentorship. This premium 6-month program is designed for men ready to fully commit to transformation.",
+        "Customized Approach: Tailored strategies to fit your church’s unique needs. Proven Results: Grow attendance, tithing, and volunteerism through authentic brotherhood. Leadership Development: Equip men to disciple others and sustain the ministry long-term. Exclusive Access: Live sessions with Donovan Anderson and personalized coaching from the program creator.",
       price: "$3000",
-      link: "/platinum.webp",
+      link: "/gold-vessel.webp",
+      cta1: "Ready to build a men’s ministry that transforms lives? Join CLEAN Vessels today!",
+      cta2: "Start Today",
     },
   ];
+
   return (
     <section className="py-16 bg-gray-100">
       <div className="container px-4 mx-auto">
@@ -41,32 +62,49 @@ export function ResourcesSection() {
           Each package has a maximum of 10 people, and will be split into two
           groups of 5 for effective and personal discipleship.
         </p>
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {resourceDetails.map((resource, index) => (
             <div
               key={index}
-              className="overflow-hidden bg-white rounded-lg shadow-md"
+              className="flex flex-col justify-between p-6 bg-white rounded-lg shadow-md"
             >
-              <Image
-                src={`${resource.link}`}
-                width={300}
-                height={200}
-                alt={resource.title}
-                className="items-center object-cover w-full h-70"
-              />
-              <div className="p-6">
-                <h3 className="mb-2 text-xl font-semibold uppercase">
-                  {resource.title}
-                </h3>
-                <p className="mb-4 text-muted-foreground">
-                  {resource.description}
-                </p>
-                <div className="flex items-center justify-between w-full gap-4 mt-4">
+              {/* Top Section: Image, Title, Headline, Subheadline, Description */}
+              <div>
+                <Image
+                  src={resource.link}
+                  width={300}
+                  height={200}
+                  alt={resource.title}
+                  className="object-cover w-full rounded-t-lg h-100"
+                />
+                <div className="mt-4">
+                  <h3 className="text-xl font-semibold text-center uppercase">
+                    {resource.title}
+                  </h3>
+                  <h4 className="mt-2 text-lg font-bold text-center text-gray-800">
+                    {resource.headline}
+                  </h4>
+                  <p className="mt-2 text-sm text-center text-gray-600">
+                    {resource.subheadline}
+                  </p>
+                  <p className="mt-4 text-center text-muted-foreground">
+                    {resource.description}
+                  </p>
+                </div>
+              </div>
+
+              {/* Bottom Section: Price and Button */}
+              <div className="mt-6">
+                <div className="flex flex-col items-center justify-between gap-4">
+                  <span>{resource.cta1}</span>
+                  <span className="text-xl font-bold text-gray-800">
+                    {resource.price}
+                  </span>
                   <button
                     type="button"
-                    className="px-4 py-2 text-white rounded-md bg-primary-red"
+                    className="w-full px-4 py-2 text-white rounded-md bg-primary-red hover:bg-red-800"
                   >
-                    Learn More
+                    {resource.cta2}
                   </button>
                 </div>
               </div>

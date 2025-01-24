@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ComparisonSection from "@/components/Pricing/comparison-section";
 
 const PricingPage = () => {
   const resourceDetails = [
@@ -120,6 +121,9 @@ const PricingPage = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div>
+        <ComparisonSection />
       </div>
     </div>
   );

@@ -4,14 +4,18 @@ export function TestimonialsSection() {
   const testimonials = [
     {
       quote:
-        "This whole thing teaches you discipline. This is not just for lust.",
+        "CLEAN has transformed our men’s ministry. Men are opening up, seeking help, and finding freedom like never before.",
+      name: "Pastor John Doe, Zion Church",
     },
     {
-      quote: "I needed to purge myself physically and spiritually.",
+      quote:
+        "The CLEAN program gave me the tools and support I needed to break free from pornography and rebuild trust with my wife.",
+      name: "Clean Participant",
     },
     {
       quote:
         "I was dating with no purpose...it broke unholy convenants with women",
+      name: "Clean Participant",
     },
   ];
 
@@ -33,6 +37,9 @@ export function TestimonialsSection() {
             >
               <blockquote className="mb-4 text-lg">
                 &quot;{testimonial.quote}&quot;
+              </blockquote>
+              <blockquote className="mb-4 text-md">
+                {testimonial.name}
               </blockquote>
             </div>
           ))}
