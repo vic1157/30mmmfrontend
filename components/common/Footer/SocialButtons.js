@@ -4,7 +4,7 @@ import { FaFacebookF, FaTiktok, FaYoutube } from "react-icons/fa";
 
 export default function SocialButtons() {
   return (
-    <div className="flex flex-row items-center justify-center gap-x-5 mt-[5vh]">
+    <div className="flex flex-row items-center justify-center gap-x-5 mt-[4vh]">
       <FBButton />
       <YTButton />
       <TikTokButton />

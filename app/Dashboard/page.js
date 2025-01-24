@@ -17,7 +17,7 @@ export default function Dashboard() {
 
       {/* Start of the content container */}
       <DailySurvey />
-      <div className="flex flex-col items-start space-y-4 gap-y-5  pt-12 relative w-full mt-8 min-h-screen max-w-[1200px] mx-auto max-lg:mx-2 ">
+      <div className="flex flex-col items-start space-y-4 gap-y-5  pt-12 relative w-full mt-8 min-h-screen max-w-[1200px] mx-auto max-lg:mx-2 mb-8 ">
         <div className="flex flex-wrap items-center justify-start w-full gap-2 md:gap-y-5 ">
           <h1 className="text-3xl font-bold leading-relaxed md:text-4xl">
             Hello, Donovan Anderson
@@ -70,7 +70,6 @@ export default function Dashboard() {
           <WeekCard week={6} status={"Completed"} />
           <WeekCard week={7} status={"Completed"} />
         </div>
-        <Footer />
       </div>
     </div>
   );
@@ -332,27 +331,5 @@ export const DonateHero = () => {
         </div>
       </div>
     </>
-  );
-};
-
-export const Footer = () => {
-  return (
-    <footer className="flex flex-col w-full h-40 ">
-      <div className="flex flex-row items-center text-sm md:text-base border-t-2 space-y-2 border-gray-300 justify-between sm:justify-evenly w-full text-[#677489] px-2">
-        <Link href="/Home">Home</Link>
-        <Link href="/Contact">Contact</Link>
-        <Link href="/Help">Help & Support</Link>
-        <Link href="/Terms">Terms of Service</Link>
-      </div>
-      <div className="flex flex-row-reverse items-center mt-3 md:flex-col gap-y-3 md:items-start md:justify-center">
-        <div className="text-[#959EAC] md:mx-auto text-xs md:text-base order-2 md:order-1">
-          &copy; {new Date().getFullYear()} Thirty Mighty Men Ministries
-          &trade;. All rights reserved.
-        </div>
-        <div className="ml-auto text-sm md:text-base md:mx-auto">
-          <SocialButtons />
-        </div>
-      </div>
-    </footer>
   );
 };

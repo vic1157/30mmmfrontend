@@ -46,15 +46,17 @@ export default function NavBar() {
   return (
     <nav className="flex flex-row justify-between p-4 mx-10 text-black bg-white">
       {/* Left side: Logo and Text */}
-      <div className="flex flex-row items-center gap-2">
-        <Image
-          src={logo}
-          alt="30 Mighty Men Ministries Logo"
-          width={35}
-          height={25}
-        />
-        <div>30 Mighty Men Ministries</div>
-      </div>
+      <Link href='/'>
+        <div className="flex flex-row items-center gap-2">
+          <Image
+            src={logo}
+            alt="30 Mighty Men Ministries Logo"
+            width={35}
+            height={25}
+          />
+          <div>30 Mighty Men Ministries</div>
+        </div>
+      </Link>
 
       {/* Right side: Buttons */}
       <div className="flex flex-row items-center gap-2">{renderButtons()}</div>
