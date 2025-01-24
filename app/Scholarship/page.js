@@ -32,7 +32,7 @@ export default function ScholarshipPage() {
             to personal growth.
           </p>
           <Button asChild>
-            <Link href="#apply">Apply for a Scholarship</Link>
+            <Link href="/Scholarship-Application">Apply for a Scholarship</Link>
           </Button>
         </div>
         <div>
@@ -91,7 +91,9 @@ export default function ScholarshipPage() {
             tier or higher.
           </li>
         </ol>
-        <Button>Start Your Application</Button>
+        <Link asChild href="/Scholarship-Application">
+          <Button>Start Your Application</Button>
+        </Link>
       </div>
 
       <div className="text-center">
