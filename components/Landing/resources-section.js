@@ -56,12 +56,19 @@ export function ResourcesSection() {
   return (
     <section className="py-16 bg-gray-100">
       <div className="container px-4 mx-auto">
-        <h2 className="mb-12 text-3xl font-bold text-center md:text-4xl">
+        <h2 className="mb-16 text-3xl font-bold text-center md:text-4xl">
           Our Resources
         </h2>
-        <p className="mb-12 text-xl text-center md:text-xl">
+        <p className="mb-8 text-xl text-center md:text-xl">
           Each package has a maximum of 10 people, and will be split into two
           groups of 5 for effective and personal discipleship.
+        </p>
+        <p className="mb-8 text-xl text-center md:text-xl">
+          Clean also offers{" "}
+          <a href="/Scholarship" className="text-blue-600 hover:text-blue-800">
+            scholarship opportunities
+          </a>{" "}
+          to find cost-effective ways to continue this mission.
         </p>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {resourceDetails.map((resource, index) => (
