@@ -9,11 +9,11 @@ export function ChurchRoleSection() {
         <div className="flex flex-col items-center gap-12 md:flex-row">
           {/* Left Column: Video Embed */}
           <div className="md:w-1/2">
-            <YouTubeVideo videoId="tXCZLYmgmVc" />
+            <YouTubeVideo videoId="3reik8Pkt60" />
           </div>
 
           {/* Right Column: Content */}
-          <div className="md:w-1/2">
+          <div className="mx-16 md:w-1/2">
             <h2 className="mb-6 text-3xl font-bold md:text-4xl">
               The Church’s Role in Healing from Pornography: Why CLEAN Matters
             </h2>

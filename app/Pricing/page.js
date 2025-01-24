@@ -53,10 +53,10 @@ const PricingPage = () => {
         "Private Online Community: Join a private online platform for CLEAN Leadership participants.",
         "Two Coaching Sessions with the Program Creator: Receive personalized guidance on leadership development and ministry building.",
       ],
-      price: "$1500",
+      price: "Coming Soon",
       link: "/silver-vessel.webp",
       cta1: "Ready to lead? Join CLEAN Leadership today and equip yourself to transform your church.",
-      cta2: "Join Today",
+      // cta2: "Join Today",
       donorsboxUrl: "https://donorsbox.com/your-silver-tier-campaign-url", // Add this
     },
     {
@@ -71,10 +71,10 @@ const PricingPage = () => {
         "Closed, Premium Community: Join a private online platform for deep discussions and networking.",
         "Practical Physical Materials: Receive a personalized certificate of completion and physical copies of the CLEAN book for your group.",
       ],
-      price: "$3000",
+      price: "Coming Soon",
       link: "/gold-vessel.webp",
       cta1: "Ready to transform your church? Join CLEAN Vessels today and refine your ministry for honorable use.",
-      cta2: "Join Today",
+      // cta2: "Join Today",
       donorsboxUrl: "https://donorsbox.com/your-gold-tier-campaign-url", // Add this
     },
   ];

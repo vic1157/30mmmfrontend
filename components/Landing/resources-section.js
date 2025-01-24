@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function ResourcesSection() {
   const resourceDetails = [
@@ -33,10 +34,10 @@ export function ResourcesSection() {
         "Join a 5-week journey designed to equip you with the tools, training, and support to lead a thriving men’s ministry in your church.",
       description:
         "Advanced Training: Learn how to recruit, train, and disciple leaders within your church. Live Group Coaching: Participate in synchronous small group sessions for real-time interaction and support. Proven Resources: Access exclusive video content, downloadable tools, and a physical CLEAN book. Community Support: Join a private online community for networking and encouragement.",
-      price: "$1500",
+      price: "Coming Soon",
       link: "/silver-vessel.webp",
       cta1: "Ready to grow as a leader? Join CLEAN Leadership today and take the next step in your transformation journey.",
-      cta2: "Start Today",
+      // cta2: "Start Today",
     },
     {
       title: "gold tier",
@@ -45,10 +46,10 @@ export function ResourcesSection() {
         "Join an exclusive, high-touch program designed to transform your church’s men’s ministry through customized strategies, proven programming, and personalized coaching.",
       description:
         "Customized Approach: Tailored strategies to fit your church’s unique needs. Proven Results: Grow attendance, tithing, and volunteerism through authentic brotherhood. Leadership Development: Equip men to disciple others and sustain the ministry long-term. Exclusive Access: Live sessions with Donovan Anderson and personalized coaching from the program creator.",
-      price: "$3000",
+      price: "Coming Soon",
       link: "/gold-vessel.webp",
       cta1: "Ready to build a men’s ministry that transforms lives? Join CLEAN Vessels today!",
-      cta2: "Start Today",
+      // cta2: "Start Today",
     },
   ];
 
@@ -100,12 +101,12 @@ export function ResourcesSection() {
                   <span className="text-xl font-bold text-gray-800">
                     {resource.price}
                   </span>
-                  <button
-                    type="button"
-                    className="w-full px-4 py-2 text-white rounded-md bg-primary-red hover:bg-red-800"
+                  <Link
+                    href="/Pricing"
+                    className="w-full px-4 py-2 text-center text-white rounded-md bg-primary-red hover:bg-red-800"
                   >
                     {resource.cta2}
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

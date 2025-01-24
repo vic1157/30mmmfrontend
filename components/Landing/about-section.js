@@ -10,7 +10,7 @@ export function AboutSection() {
         <div className="flex flex-col items-center gap-12 md:flex-row">
           {/* Left Column: Video Embed */}
           <div className="md:w-1/2">
-            <YouTubeVideo videoId="bKRDyeBvzCU" />
+            <YouTubeVideo videoId="tXCZLYmgmVc" />
             <div className="flex items-center mt-8">
               For more videos please see{" "}
               <Link
@@ -23,7 +23,7 @@ export function AboutSection() {
           </div>
 
           {/* Right Column: Content */}
-          <div className="md:w-1/2">
+          <div className="mx-16 md:w-1/2">
             <h2 className="mb-6 text-3xl font-bold md:text-4xl">
               About 30 Mighty Men Ministries
             </h2>
