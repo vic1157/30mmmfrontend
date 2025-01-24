@@ -2,9 +2,7 @@
 
 import React from "react";
 import { SignedIn, SignOutButton } from "@clerk/nextjs";
-import Link from "next/link";
 import { RxCaretDown, RxHamburgerMenu } from "react-icons/rx";
-import SocialButtons from "@/components/common/Footer/SocialButtons";
 import { DailySurvey } from "@/components/Home/DailySurvey";
 
 export default function Dashboard() {
@@ -15,63 +13,64 @@ export default function Dashboard() {
       <div className="relative flex flex-col items-center justify-start min-h-screen mx-auto">
         <NavigationBar />
 
-      {/* Start of the content container */}
-      <DailySurvey />
-      <div className="flex flex-col items-start space-y-4 gap-y-5  pt-12 relative w-full mt-8 min-h-screen max-w-[1200px] mx-auto max-lg:mx-2 mb-8 ">
-        <div className="flex flex-wrap items-center justify-start w-full gap-2 md:gap-y-5 ">
-          <h1 className="text-3xl font-bold leading-relaxed md:text-4xl">
-            Hello, Donovan Anderson
-          </h1>
-          <UserSelectCaret />
+        {/* Start of the content container */}
+        <DailySurvey />
+        <div className="flex flex-col items-start space-y-4 gap-y-5  pt-12 relative w-full mt-8 min-h-screen max-w-[1200px] mx-auto max-lg:mx-2 mb-8 ">
+          <div className="flex flex-wrap items-center justify-start w-full gap-2 md:gap-y-5 ">
+            <h1 className="text-3xl font-bold leading-relaxed md:text-4xl">
+              Hello, Donovan Anderson
+            </h1>
+            <UserSelectCaret />
 
-          <h2 className="w-full text-base font-normal text-gray-400">
-            Today is{" "}
-            <span className="font-semibold text-almost-black">
-              Week 1 Day 1: Sanctification
-            </span>
-          </h2>
-        </div>
-        <DonateHero />
-        {/* The sizes by lines are 22 14 12 and the buttons are 16 */}
-        <div className="w-full mr-auto">
-          <h4 className="text-3xl font-semibold leading-7 tracking-wider">
-            CLEAN XXIII
-          </h4>
-        </div>
-        <div className="h-[30px] inline-flex w-full items-center justify-between py-1.5 sm:px-2 px-0.5">
-          <div className="inline-flex justify-evenly gap-1.5  bg-gray-200 rounded-[40px] gap-x-0.5 sm:gap-x-2">
-            <span className="text-xs tracking-wider leading-tight font-light text-slate-600 hover:bg-almost-black hover:text-white rounded-[34px] py-2 px-2.5 hover:font-medium">
-              All
-            </span>
-            <span className="text-xs tracking-wider leading-tight font-light text-slate-600 hover:bg-almost-black hover:text-white rounded-[34px] py-2 px-2.5 hover:font-medium">
-              In Progress
-            </span>
-            <span className="text-xs tracking-wider max-sm:hidden leading-tight font-light text-slate-600 hover:bg-almost-black hover:text-white rounded-[34px] py-2 px-2.5 hover:font-medium">
-              {" "}
-              Upcoming
-            </span>
-            <span className="text-xs tracking-wider leading-tight font-light text-slate-600 hover:bg-almost-black hover:text-white rounded-[34px] py-2 px-2.5 hover:font-medium">
-              Completed
-            </span>
+            <h2 className="w-full text-base font-normal text-gray-400">
+              Today is{" "}
+              <span className="font-semibold text-almost-black">
+                Week 1 Day 1: Sanctification
+              </span>
+            </h2>
           </div>
-          <div className="inline-flex items-center gap-1 p-2 ml-auto text-sm font-light bg-gray-200 rounded-2xl">
-            <CalendarIcon />
-            Group:
-            <div className="font-medium leading-snug ">Clean XXIII</div>
-            <DownCaret />
+          <DonateHero />
+          {/* The sizes by lines are 22 14 12 and the buttons are 16 */}
+          <div className="w-full mr-auto">
+            <h4 className="text-3xl font-semibold leading-7 tracking-wider">
+              CLEAN XXIII
+            </h4>
           </div>
-        </div>
-        <div className="flex flex-row flex-wrap justify-center w-full gap-3 py-3 md:gap-5">
-          <WeekCard week={1} status={"Completed"} />
-          <WeekCard week={2} status={"Completed"} />
-          <WeekCard week={3} status={"Completed"} />
-          <WeekCard week={4} status={"Completed"} />
-          <WeekCard week={5} status={"Completed"} />
-          <WeekCard week={6} status={"Completed"} />
-          <WeekCard week={7} status={"Completed"} />
+          <div className="h-[30px] inline-flex w-full items-center justify-between py-1.5 sm:px-2 px-0.5">
+            <div className="inline-flex justify-evenly gap-1.5  bg-gray-200 rounded-[40px] gap-x-0.5 sm:gap-x-2">
+              <span className="text-xs tracking-wider leading-tight font-light text-slate-600 hover:bg-almost-black hover:text-white rounded-[34px] py-2 px-2.5 hover:font-medium">
+                All
+              </span>
+              <span className="text-xs tracking-wider leading-tight font-light text-slate-600 hover:bg-almost-black hover:text-white rounded-[34px] py-2 px-2.5 hover:font-medium">
+                In Progress
+              </span>
+              <span className="text-xs tracking-wider max-sm:hidden leading-tight font-light text-slate-600 hover:bg-almost-black hover:text-white rounded-[34px] py-2 px-2.5 hover:font-medium">
+                {" "}
+                Upcoming
+              </span>
+              <span className="text-xs tracking-wider leading-tight font-light text-slate-600 hover:bg-almost-black hover:text-white rounded-[34px] py-2 px-2.5 hover:font-medium">
+                Completed
+              </span>
+            </div>
+            <div className="inline-flex items-center gap-1 p-2 ml-auto text-sm font-light bg-gray-200 rounded-2xl">
+              <CalendarIcon />
+              Group:
+              <div className="font-medium leading-snug ">Clean XXIII</div>
+              <DownCaret />
+            </div>
+          </div>
+          <div className="flex flex-row flex-wrap justify-center w-full gap-3 py-3 md:gap-5">
+            <WeekCard week={1} status={"Completed"} />
+            <WeekCard week={2} status={"Completed"} />
+            <WeekCard week={3} status={"Completed"} />
+            <WeekCard week={4} status={"Completed"} />
+            <WeekCard week={5} status={"Completed"} />
+            <WeekCard week={6} status={"Completed"} />
+            <WeekCard week={7} status={"Completed"} />
+          </div>
         </div>
       </div>
-    </div>
+    </SignedIn>
   );
 }
 
