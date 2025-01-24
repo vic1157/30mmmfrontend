@@ -81,12 +81,6 @@ export function AboutSection() {
               inspire and empower men to live lives of integrity, purpose, and
               faith.
             </p>
-            <button
-              type="submit"
-              className="px-6 py-2 text-white rounded-md bg-primary-red hover:bg-red-800"
-            >
-              Learn More About Us
-            </button>
           </div>
         </div>
       </div>

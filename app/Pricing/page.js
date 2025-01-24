@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import ComparisonSection from "@/components/Pricing/comparison-section";
 
@@ -18,6 +20,7 @@ const PricingPage = () => {
       link: "/clay-vessel.webp",
       cta1: "Ready to take the first step? Join CLEAN Starter today and start your transformation journey.",
       cta2: "Join Today",
+      donorsboxUrl: "https://donorsbox.com/your-clay-tier-campaign-url", // Add this
     },
     {
       title: "wood tier",
@@ -36,6 +39,7 @@ const PricingPage = () => {
       link: "/wooden-vessel.webp",
       cta1: "Ready to start your transformation? Join CLEAN Essentials today and take the first step at your own pace. Add coaching for personalized guidance!",
       cta2: "Join Today",
+      donorsboxUrl: "https://donorsbox.com/your-wood-tier-campaign-url", // Add this
     },
     {
       title: "silver tier",
@@ -53,6 +57,7 @@ const PricingPage = () => {
       link: "/silver-vessel.webp",
       cta1: "Ready to lead? Join CLEAN Leadership today and equip yourself to transform your church.",
       cta2: "Join Today",
+      donorsboxUrl: "https://donorsbox.com/your-silver-tier-campaign-url", // Add this
     },
     {
       title: "gold tier",
@@ -70,6 +75,7 @@ const PricingPage = () => {
       link: "/gold-vessel.webp",
       cta1: "Ready to transform your church? Join CLEAN Vessels today and refine your ministry for honorable use.",
       cta2: "Join Today",
+      donorsboxUrl: "https://donorsbox.com/your-gold-tier-campaign-url", // Add this
     },
   ];
 
@@ -114,7 +120,10 @@ const PricingPage = () => {
                 <span className="text-xl font-bold text-gray-800">
                   {resource.price}
                 </span>
-                <button className="w-full px-4 py-2 text-sm text-white uppercase transition rounded bg-primary-red hover:bg-red-800">
+                <button
+                  onClick={() => window.open(resource.donorsboxUrl, "_blank")}
+                  className="w-full px-4 py-2 text-sm text-white uppercase transition rounded bg-primary-red hover:bg-red-800"
+                >
                   {resource.cta2}
                 </button>
               </div>
