@@ -10,7 +10,7 @@
     "test": "jest --passWithNoTests"
   },
   "dependencies": {
-    "@clerk/elements": "^0.22.10",
+    "@clerk/elements": "^0.22.15",
     "@clerk/nextjs": "^6.9.8",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
