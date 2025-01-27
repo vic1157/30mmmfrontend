@@ -17,13 +17,13 @@ import { Icons } from "@/components/ui/icons";
 export default function LogIn() {
   return (
     <div className="inset-auto flex flex-col w-screen min-w-[400px] min-h-screen md:flex-row">
+      <div className="fixed z-20 py-1 rounded-md max-md:shadow-md bg-white/80 top-2 left-2 before:static "></div>
+      <div className=" bg-white bg-center aspect-[773/499] bg-no-repeat bg-cover max-xs:scale-x-125 sm:self-stretch md:bg-top-4 max-md:h-fit max-md:bg-top min-h-72 md:bg-cover md:bg-origin-border md:overflow-x-clip md:w-3/4 md:order-2 max-md:w-full -z-50 bg-jesus-hero md:bg-clip-border"></div>
       <SignIn.Root>
-        <Clerk.Loading>
-          {(isGlobalLoading) => (
-            <>
-              <div className="fixed z-20 py-1 rounded-md max-md:shadow-md bg-white/80 top-2 left-2 before:static "></div>
-              <div className=" bg-white bg-center aspect-[773/499] bg-no-repeat bg-cover max-xs:scale-x-125 sm:self-stretch md:bg-top-4 max-md:h-fit max-md:bg-top min-h-72 md:bg-cover md:bg-origin-border md:overflow-x-clip md:w-3/4 md:order-2 max-md:w-full -z-50 bg-jesus-hero md:bg-clip-border"></div>
-              <div className="z-10 flex flex-col w-full gap-1 md:gap-3 max-md:justify-between md:h-full md:pt-7 md:items-center md:justify-between md:w-1/2">
+        <div className="z-10 flex flex-col w-full gap-1 md:gap-3 max-md:justify-between md:h-full md:pt-7 md:items-center md:justify-between md:w-1/2">
+          <Clerk.Loading>
+            {(isGlobalLoading) => (
+              <>
                 <Image
                   className="z-10 block mx-auto -mt-16 md:mt-16"
                   src="/logo.png"
@@ -37,33 +37,22 @@ export default function LogIn() {
                     Welcome Back!
                   </h1>
                   <Clerk.Connection name="google" asChild>
-                    <>
-                      <button className="flex items-center justify-center w-5/6 py-2 mx-auto my-4 shadow-md outline outline-1 outline-primary-red rounded-2xl columns-1 gap-7 justify-self-center">
-                        <Image
-                          className="object-cover contain-layout overflow-x-clip"
-                          alt="Google Logo"
-                          src="/googlelogo.png"
-                          width={20}
-                          height={20}
-                        />
-                        <div className="text-lg font-semibold text-primary-red">
-                          Login with Google
-                        </div>
-                      </button>
-                      <Clerk.Loading scope="provider:google">
-                        {(isLoading) =>
-                          isLoading ? (
-                            <Icons.spinner className="size-4 animate-spin" />
-                          ) : (
-                            <div className="flex items-center w-full md:my-2 px-52 gap-x-5 ">
-                              <hr className="flex-auto w-2/6 border-gray-300 border-1 " />
-                              <p className="text-base text-black">or</p>
-                              <hr className="flex-auto w-2/6 border-gray-300 border-1 " />
-                            </div>
-                          )
-                        }
-                      </Clerk.Loading>
-                    </>
+                    <Button
+                      variant="outline"
+                      className="flex items-center justify-center w-full py-2 mx-auto my-4 shadow-md outline outline-1 outline-primary-red rounded-2xl columns-1 gap-7 justify-self-center"
+                      disabled={isGlobalLoading}
+                    >
+                      <Image
+                        className="object-cover contain-layout overflow-x-clip"
+                        alt="Google Logo"
+                        src="/googlelogo.png"
+                        width={20}
+                        height={20}
+                      />
+                      <div className="text-lg font-semibold text-primary-red">
+                        Login with Google
+                      </div>
+                    </Button>
                   </Clerk.Connection>
 
                   <Clerk.GlobalError className="block text-sm text-red-400" />
@@ -174,10 +163,10 @@ export default function LogIn() {
                     </Card>
                   </SignIn.Strategy>
                 </SignIn.Step>
-              </div>
-            </>
-          )}
-        </Clerk.Loading>
+              </>
+            )}
+          </Clerk.Loading>
+        </div>
       </SignIn.Root>
     </div>
   );
