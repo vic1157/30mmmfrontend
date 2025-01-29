@@ -7,11 +7,13 @@ import { HeroSection } from "@/components/Landing/hero-section";
 import MetricsDashboard from "@/components/Landing/metrics-dashboard";
 import { ResourcesSection } from "@/components/Landing/resources-section";
 import { TestimonialsSection } from "@/components/Landing/testimonials-section";
+import { TwoFacesSection } from "@/components/Landing/two-faces-section";
 
 export default function LandingPage() {
   return (
     <div className="min-h-screen">
       <HeroSection />
+      <TwoFacesSection />
       <ChurchRoleSection />
       <MetricsDashboard />
       <ResourcesSection />

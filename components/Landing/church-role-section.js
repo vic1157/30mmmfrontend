@@ -14,17 +14,14 @@ export function ChurchRoleSection() {
 
           {/* Right Column: Content */}
           <div className="mx-16 md:w-1/2">
+            <h1>The Church’s Role in Healing</h1>
             <h2 className="mb-6 text-3xl font-bold md:text-4xl">
-              The Church’s Role in Healing from Pornography: Why CLEAN Matters
+              Why CLEAN Matters
             </h2>
-            <p className="mb-6 text-xl italic md:text-2xl">
-              Only 9% of pastors say their church has a program to address
-              pornography. CLEAN can help you lead the way.
-            </p>
 
             {/* The Problem Section */}
             <div className="mb-6">
-              <h3 className="mb-4 text-2xl font-bold">The Problem</h3>
+              <h3 className="mb-4 text-xl font-bold">The Problem</h3>
               <p className="mb-4 text-lg text-muted-foreground">
                 Pornography is one of the most pervasive and damaging issues
                 facing men and families today. Yet:
@@ -41,22 +38,26 @@ export function ChurchRoleSection() {
                 </li>
                 <li>
                   For every porn user, there’s a partner experiencing betrayal
-                  trauma, but most churches lack support programs.{" "}
+                  trauma, but most churches lack support programs.
                   <a
                     href="https://www.barna.com/trends/church-and-porn/"
-                    className="text-blue-600  hover:text-blue-800"
+                    className="text-blue-600 hover:text-blue-800"
                   >
                     [1]
                   </a>
                 </li>
               </ul>
+              <p className="mb-4 text-lg text-muted-foreground">
+                Who else but the church can address this issue with grace,
+                truth, and lasting impact?
+              </p>
             </div>
 
             {/* The Solution Section */}
             <div className="mb-6">
-              <h3 className="mb-4 text-2xl font-bold">The Solution</h3>
+              <h3 className="mb-4 text-xl font-bold">The Solution</h3>
               <p className="mb-4 text-lg text-muted-foreground">
-                The CLEAN program helps churches:
+                The CLEAN program empowers churches:
               </p>
               <ul className="pl-6 mb-4 text-lg list-disc text-muted-foreground">
                 <li>
@@ -67,16 +68,11 @@ export function ChurchRoleSection() {
                 </li>
                 <li>Restore families and strengthen communities.</li>
               </ul>
-            </div>
-
-            {/* The Impact Section */}
-            <div className="mb-6">
-              <h3 className="mb-4 text-2xl font-bold">The Impact</h3>
               <p className="mb-4 text-lg text-muted-foreground">
-                Churches with programs like CLEAN are 4x more likely to help men
-                overcome pornography. CLEAN integrates counseling, community
-                engagement, and accountability to address the complex reality of
-                porn use.
+                Churches with programs like CLEAN are four times more likely to
+                help men overcome pornography. CLEAN integrates counseling,
+                community engagement, and accountability to address the complex
+                realities of sexual struggles.
               </p>
             </div>
 
