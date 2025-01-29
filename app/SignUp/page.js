@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 /* 
-  This is a version of the registration page that tracks state and "submits" the form data to the console. It also has a tabbed interface for personal information and address information. 
+  This is a version of the registration page that tracks state and submits the form data to the console. It also has a tabbed interface for personal information and address information. 
   The form data is stored in the formData state object and every form field is updated with one dynamic handleChange function. formData holds the initial state of the form fields.
 
   The onSubmit function logs the form data to the console and alerts the user with the same data.
