@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from 'next/router';
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,6 +19,8 @@ import Link from "next/link";
 
 export default function SignIn() {
   const [firstTabActive, setFirstTabActive] = useState(true);
+
+  const router = useRouter();
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -32,6 +35,8 @@ export default function SignIn() {
     state: "",
     zipcode: "",
   });
+  const [error, setError] = useState('');
+  const [message, setMessage] = useState('');
 
   // Every field uses this function to update the form data.
   const handleChange = (e) => {
@@ -45,10 +50,31 @@ export default function SignIn() {
     }));
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     console.log(`Submitted: ${JSON.stringify(formData)}`);
     alert(`Submitted: ${JSON.stringify(formData)}`);
+
+    try {
+      const res = await fetch('/api/auth/signup', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.message);
+      }
+
+      setMessage(data.message);
+      setFormData({ email: '', password: '' });
+    } catch (error) {
+      setError(error.message);
+    }
   };
 
   return (
