@@ -10,6 +10,14 @@ const userSchema = new mongoose.Schema({
 		type: String,
 		required: true,
 	},
+	firstName: {
+		type: String,
+		required: false,
+	},
+	lastName: {
+		type: String,
+		required: false,
+	},
 	dateOfBirth: {
 		type: String,
 		required: false,
@@ -33,7 +41,7 @@ const userSchema = new mongoose.Schema({
 		type: String,
 		required: false,
 	},
-	city: {
+	city: {  
 		type: String,
 		required: false,
 	},
@@ -41,7 +49,7 @@ const userSchema = new mongoose.Schema({
 		type: Number,
 		required: false,
 	},
-	isVerified: {
+	isEmailVerified: {
 		type: Boolean,
 		default: false,
 	},
